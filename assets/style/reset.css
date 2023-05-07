@@ -66,11 +66,10 @@ li {
   padding: 0;
 }
 
-.inner {
-  max-width: 100rem;
-  margin: 0 auto;
-}
+
 .header-content {
+  max-width: 1256px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,7 +95,8 @@ li {
 }
 .header-content .header-area2 {
   display: flex;
-  justify-content: center;
+  flex: 0 1 650px;
+  justify-content: flex-end;
   align-items: center;
   font-size: 1.4rem;
   
@@ -105,17 +105,19 @@ li {
 .header-content .header-area2 .input-area {
   display: flex;
   align-items: center;
-  width: 19rem;
+  width: 26rem;
   height: 4rem;
   font-size: 1.4rem;
   border: 1px solid gray;
   border-radius: 5px;
-  padding: 1rem;
+  padding: 0 1rem;
+  padding-right: 2rem;
 }
 .header-content .header-area2 .input-area i {
-  padding: 0 1rem;
+  
 }
 .header-content .header-area2 .input-area input {
+  padding-left: 1rem;
   width: 100%;
   height: 100%;
   font-size: 1.4rem;
@@ -123,33 +125,30 @@ li {
   border: none;
   
 }
-.header-content .header-area2 p i {
+.header-content .header-area2 .cart-area i {
   padding-left: 2rem;
-  padding-right: 3rem;
-  
-}
-.header-content .header-area2 p {
-  padding-right: 2rem;
-  padding-left: 2rem;
-}
-.header-content .header-area2 p:nth-of-type(2) {
-  padding-left: 0;
-}
-.header-content .header-area2 p::after {
-  content: "|";
-  float: right;
-  color: gray;
-  opacity: 50%;
-  margin-right: -2rem;
-}
-.header-content .header-area2 p:nth-of-type(1)::after {
-  content: "";
-}
-.header-content .header-area2 p:nth-of-type(4)::after{
-  content: "";
 }
 
-.header-content .header-area2 button {
+.header-content .header-area2 .login-area {
+  display: flex;
+  padding: 0 2rem;
+}
+.header-content .header-area2 .login-area a {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+.header-content .header-area2 .login-area a::after {
+  
+  content: "";
+  display: inline-block;
+  background-color: #2F3438;
+  height: 1rem;
+  width: 0.1rem;
+  margin-right: 1rem;
+}
+
+.header-content .header-area2 .writing-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,12 +158,12 @@ li {
   border-radius: 5px;
   font-size: 1.4rem;
 }
-.header-content .header-area2 button p {
+.header-content .header-area2 .writing-button p {
   padding: 0;
   margin-right: 1rem;
   color: white;
 }
-.header-content .header-area2 button i {
+.header-content .header-area2 .writing-button i {
   color: white;
 }
 
