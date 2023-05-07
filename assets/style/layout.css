@@ -1,4 +1,4 @@
-
+/* header */
 .header-container .header-content {
   display: flex;
   align-items: center;
@@ -113,6 +113,72 @@
   .header-content .header-area1 a {
     padding: 0 1rem;
   }
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 30rem;
+  background-color: rgb(247, 249, 250);
+  padding: 4rem 6rem;
+}
+.footer-content {
+  max-width: 1256px;
+  margin: auto;
+  display: flex;
+
+}
+.footer-content .center-area {
+  padding-right: 3rem;
+  border-right: 1px solid rgb(234, 237, 239);
+}
+.footer-content .center-area .center-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.footer-content .center-area .center-title a {
+  font-size: 1.8rem;
+}
+.footer-content .center-area a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-right: 0.6rem;
+}
+.footer-content .center-area span {
+  font-size: 1.4rem;
+}
+.footer-content .center-area p {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+.footer-content .center-area button {
+  display: block;
+  font-size: 1.4rem;
+  border: 1px solid rgb(218, 221, 224);
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+}
+.footer-content .center-area button:nth-of-type(1) {
+  margin-bottom: 1.2rem;
+}
+.footer-content .information-area1 {
+  display: flex;
+}
+.footer-content .information-area1 .area1-1 {
+  display: flex;
+  flex-direction: column;
+}
+.footer-content .information-area1 .area1-1 a {
+  padding: 0 1rem 2rem 0;
+}
+.footer-content .information-area1 .area1-2 {
+  display: flex;
+  flex-direction: column;
+}
+.footer-content .information-area1 .area1-2 a {
+  padding-bottom: 2rem;
 }
 
 
