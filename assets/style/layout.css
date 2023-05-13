@@ -7,6 +7,9 @@
   padding: 2rem 6rem;
   box-sizing: border-box;
 }
+.header-container .header-content .bar {
+  display: none;
+}
 .header-content .logo {
   margin-right: 3.5rem;
   width: 7.4rem;
@@ -352,7 +355,7 @@ footer {
     padding-left: 10px;
   }
 }
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1024px) {
   .header-container .header-content {
     padding: 2rem 4rem;
   }
@@ -391,5 +394,47 @@ footer {
     justify-content: flex-start;
     align-items: center;
   }
-}
+  .header-container .header-content .header-area2 .input-area input {
+    display: none;
+  }
+  .header-container .header-content .header-area2 .input-area {
+    border: none;
+    padding-right: 0px;
+    padding-left: 0px;
+    flex-direction: row-reverse;
+    width: 30px;
+  }
+  .header-container .header-content .header-area2 .input-area button {
+    width: 100%;
+  }
+  .header-container .header-content .header-area2 .cart-area i {
+    padding-left: 5px;
+  }
 
+}
+@media screen and (max-width:768px) {
+  .header-container .header-content .header-area1 {
+    display: none;
+  }
+  .header-container .header-content .header-area2 {
+    margin-left: 0px;
+  }
+  .header-container .header-content .header-area2 .login-area {
+    display: none;
+  }
+  .header-container .header-content .header-area2 .writing-button {
+    display: none;
+  }
+  .header-container .header-content .bar {
+    display: block;
+    font-size: 2.4rem;
+  }
+  .header-container .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-container .header-content .logo {
+    margin-right: 0px;
+  }
+}
