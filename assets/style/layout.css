@@ -244,6 +244,9 @@ footer {
   flex: 2;
   color: rgb(130, 140, 148);
 }
+.footer-content .information-area2 .list-area {
+  display: none;
+}
 .footer-content .information-area2 ul {
   font-size: 1.2rem;
   margin-bottom: 1.2rem;
@@ -445,5 +448,33 @@ footer {
     display: inline-block;
     padding: 0;
     margin: 8px 12px 8px 0;
+  }
+  .footer-content .information-area2 .list-area {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .footer-content .information-area2 .list-area .list-area-title {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: rgb(47, 52, 56);
+  }
+  .footer-content .information-area2 .list-area .list-area-content {
+    font-size: 1.2rem;
+    color: rgb(130, 140, 148);
+    margin-top: 1.2rem;
+  }
+  .footer-content .information-area2 .list-area .list-area-content span {
+    font-weight: 700;
+  }
+  .footer-content .information-area2 .service-area .service-1 {
+    display: none;
+  }
+  .footer-content .information-area2 .service-area .service-2 {
+    padding-left: 0;
+  }
+  .footer-content .information-area2 .service-area .service-2 img {
+    display: none;
   }
 }
