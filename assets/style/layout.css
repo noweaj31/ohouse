@@ -336,6 +336,22 @@ footer {
 .footer-content .information-area2 .information-area2-icons a:hover {
   color: gray;
 }
+@media screen and (max-width:1200px) {
+  .footer-content .center-area {
+    padding-right: 10px;
+  }
+  .footer-content .information-area1 .area1-1 {
+    padding-left: 10px;
+    
+  }
+  .footer-content .information-area1 .area1-2 {
+    padding-right: 10px;
+    
+  }
+  .footer-content .information-area2 {
+    padding-left: 10px;
+  }
+}
 @media screen and (max-width:1023px) {
   .header-container .header-content {
     padding: 2rem 4rem;
