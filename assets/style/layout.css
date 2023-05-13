@@ -47,7 +47,7 @@
 }
 .header-content .header-area2 .input-area i {
   font-size: 1.7rem;
-  color: gray;
+  color: #2F3438;
 }
 .header-content .header-area2 .input-area input {
   padding-left: 1rem;
@@ -61,6 +61,7 @@
 .header-content .header-area2 .cart-area i {
   padding-left: 1.5rem;
   font-size: 1.8rem;
+  color: #2F3438;;
 }
 
 .header-content .header-area2 .login-area {
@@ -428,11 +429,14 @@ footer {
   .header-container .header-content .bar {
     display: block;
     font-size: 2.4rem;
+    color: #2F3438;
   }
   .header-container .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 5rem;
+    padding: 0 1.6rem ;
   }
   .header-container .header-content .logo {
     margin-right: 0px;
