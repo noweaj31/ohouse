@@ -439,7 +439,7 @@ footer {
     align-items: flex-start;
   }
   .footer-content .information-area1 .area1-1 {
-    display: block;
+    display: inline-block;
     flex-direction: row;
     padding: 0;
     width: 100%;
