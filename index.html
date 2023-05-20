@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/assets/js/layout.js" async></script>
     <script
       src="https://kit.fontawesome.com/11c4b226a9.js"
       crossorigin="anonymous"
@@ -20,5 +19,20 @@
     <footer></footer>
   </body>
   <script>
+      Promise.all([
+    fetch("./layout/footer.html").then(response => response.text()),
+    fetch("./layout/header.html").then(response => response.text())
+  ])
+    .then(data => {
+      const footerData = data[0];
+      const headerData = data[1];
+  
+      document.querySelector("footer").innerHTML = footerData;
+      document.querySelector("header").innerHTML = headerData;
+    })
+    .catch(error => {
+      console.log("레이아웃을 찾을 수 없습니다.", error);
+    });
+
   </script>
 </html>
