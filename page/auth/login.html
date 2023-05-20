@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <script src="/assets/js/layout.js" async></script> -->
-  <link rel="stylesheet" href="../../assets/style/reset.css" />
-  <link rel="stylesheet" href="../../assets/style/font.css" />
-  <link rel="stylesheet" href="../../assets/style/layout.css" />
-  <title>login</title>
-</head>
-<body>
-  <div>
-    <div>
-      <a href=""><img src="../../assets/image/login-logo.png" alt=""></a>
-      <div>
-        <input type="text">
-        <input type="text">
-        <button>로그인</button>
-        <div>
-          <a href="">비밀번호 재설정</a>
-          <a href="">회원가입</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="/assets/js/layout.js" async></script> -->
+    <link rel="stylesheet" href="../../assets/style/reset.css" />
+    <link rel="stylesheet" href="../../assets/style/font.css" />
+    <link rel="stylesheet" href="../../assets/style/layout.css" />
+    <link rel="stylesheet" href="../../assets/style/login.css" />
+    <title>login</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-contant-wrap">
+        <div class="member-area">
+          <a href="/" class="logo"
+            ><img src="../../assets/image/login-logo.png" alt=""
+          /></a>
+          <div class="id-input-area">
+            <input type="text" placeholder="이메일" />
+            <input type="text" placeholder="비밀번호" />
+            <button class="login-btn">로그인</button>
+          </div>
+          <div class="id-setting">
+            <a href="">비밀번호 재설정</a>
+            <a href="http://127.0.0.1:5500/page/auth/register.html">회원가입</a>
+          </div>
+          <div class="sns-area">
+            <p>SNS계정으로 간편 로그인/회원가입</p>
+            <div class="icon-area">
+              <a href=""
+                ><img src="../../assets/image/facebook.png" alt=""
+              /></a>
+              <a href=""
+                ><img src="../../assets/image/kakaotalk.png" alt=""
+              /></a>
+              <a href=""><img src="../../assets/image/naver.png" alt="" /></a>
+            </div>
+          </div>
+          <a href="" class="login-problem">로그인에 문제가 있으신가요?</a>
+
         </div>
-        <a href="">SNS계정으로 간편 로그인/회원가입</a>
-        <div>
-          <a href=""><img src="../../assets/image/facebook.png" alt=""></a>
-          <a href=""><img src="../../assets/image/kakaotalk.png" alt=""></a>
-          <a href=""><img src="../../assets/image/naver.png" alt=""></a>
+        <div class="non-members-area">
+          <button class="non-members-btn">비회원 주문 조회하기</button>
+          <div class="non-members-information">
+            <input type="text" placeholder="주문번호" />
+            <input type="text" placeholder="이메일" />
+            <button>주문조회</button>
+          </div>
         </div>
-        <a href="">로그인에 문제가 있으신가요?</a>
       </div>
+      <p>© bucketplace, Co., Ltd.. All Rights Reserved</p>
     </div>
-  </div>
-</body>
-<script></script>
+  </body>
+  <script></script>
 </html>

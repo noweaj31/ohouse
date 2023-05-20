@@ -1,0 +1,139 @@
+/* login-page */
+.login-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "noto-sans-kr";
+}
+.login-container .login-contant-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  
+  margin: auto;
+  align-items: center;
+  padding: 4rem 0;
+
+}
+.login-container .login-contant-wrap .member-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #dbdbdb;
+  
+}
+.login-container .login-contant-wrap .member-area .logo {
+  margin-bottom: 3rem;
+}
+.login-container .login-contant-wrap .member-area .id-input-area {
+  display: flex;
+  flex-direction: column;
+}
+.login-container .login-contant-wrap .member-area .id-input-area input {
+  width: 30rem;
+  height: 5rem;
+  border: 1px solid  #dbdbdb;;
+  border-radius: 4px;
+  padding: 13px 15px 14px;
+  font-size: 1.4rem;
+  
+}
+.login-container .login-contant-wrap .member-area input:nth-of-type(1) {
+  margin-bottom: 1rem;
+}
+.login-container .login-contant-wrap .member-area .login-btn {
+  background-color: #35c5f0;
+  width: 30rem;
+  height: 5.2rem;
+  border-radius: 4px;
+  margin: 2rem 0;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 700;
+}
+.login-container .login-contant-wrap .member-area .login-btn:hover {
+  background-color: #09addb;
+}
+.login-container .login-contant-wrap .member-area .join-area {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+.login-container .login-contant-wrap .member-area .id-setting {
+  display: flex;
+  margin: 0 auto;
+
+}
+.login-container .login-contant-wrap .member-area .id-setting a {
+  font-size: 1.5rem;
+}
+.login-container .login-contant-wrap .member-area .id-setting a:nth-of-type(2) {
+  margin-left: 2rem;
+}
+.login-container .login-contant-wrap .member-area .sns-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-container .login-contant-wrap .member-area .sns-area p {
+  font-size: 1.2rem;
+  color: #757575;
+  margin: 3.5rem 0 1.5rem;
+}
+.login-container .login-contant-wrap .member-area .sns-area .icon-area {
+  display: flex;
+  
+}
+.login-container .login-contant-wrap .member-area .sns-area .icon-area a {
+  margin: 0 1rem;
+}
+.login-container .login-contant-wrap .member-area .sns-area .icon-area a:hover {
+  opacity: 70%;
+}
+.login-container .login-contant-wrap .member-area .login-problem {
+  font-size: 1.4rem;
+  color: #c2c8cc;
+  margin-top: 2.4rem;
+  
+  
+}
+.login-container .login-contant-wrap .non-members-area .non-members-btn {
+  width: 30rem;
+  font-size: 1.5rem;
+  margin: 3rem 0 2rem;
+  
+  
+}
+.login-container p {
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  color: #757575;
+}
+.login-container .login-contant-wrap .non-members-area .non-members-information {
+  display: flex;
+  flex-direction: column;
+}
+.login-container .login-contant-wrap .non-members-area .non-members-information input {
+  width: 30rem;
+  height: 5rem;
+  border: 1px solid  #dbdbdb;;
+  border-radius: 4px;
+  padding: 13px 15px 14px;
+  font-size: 1.4rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+.login-container .login-contant-wrap .non-members-area .non-members-information button {
+  background-color: #35c5f0;
+  width: 30rem;
+  height: 5.2rem;
+  border-radius: 4px;
+  
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 700;
+}
