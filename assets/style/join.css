@@ -1,0 +1,163 @@
+/* join membership page */
+
+.join-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1.5rem 0;
+  font-family: "noto-sans-kr";
+}
+
+.join-container .logo {
+  font-size: 1.5rem;
+  width: 100%;
+}
+.join-container .join-wrap {
+  padding: 6rem 0;
+  margin: 0 28.5rem;
+}
+.join-container .join-wrap .join-area h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.join-container .join-wrap .join-area .sns-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 3rem 0;
+  border-bottom: 1px solid rgb(237, 237, 237);
+}
+.join-container .join-wrap .join-area .sns-area p {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  color: rgb(117, 117, 117);
+}
+.join-container .join-wrap .join-area .sns-area .icon-area {
+  display: flex;
+  
+}
+.join-container .join-wrap .join-area .sns-area .icon-area a {
+  margin: 0 1rem;
+}
+.join-container .join-wrap .email-area {
+  padding: 3rem 0;
+}
+.join-container .join-wrap .email-area h2 {
+  font-size: 1.6rem;
+  margin: 0 0 1.2rem;
+}
+.join-container .join-wrap .email-area div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.join-container .join-wrap .email-area div input {
+  width: 17rem;
+  height: 4rem;
+  padding: 0 1.5rem;
+  
+}
+.join-container .join-wrap .email-area div input:hover {
+  background-color: #fafafa;
+}
+.join-container .join-wrap .email-area div span {
+  font-size: 1.5rem;
+  color: #dbdbdb;
+  
+}
+.join-container .join-wrap .email-area div select {
+  width: 17rem;
+  height: 4rem;
+  padding: 0 1.5rem;
+}
+
+.join-container .join-wrap .email-area button {
+  width: 36rem;
+  height: 5rem;
+  background-color: rgb(247, 248, 250);
+  color: rgb(194, 200, 204);
+  border: 1px solid rgb(218, 220, 224);
+  border-radius: 4px;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.join-container .join-wrap .password-area .pw-area-input h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+.join-container .join-wrap .password-area .pw-area-input p {
+  color: rgb(130, 140, 148);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.join-container .join-wrap .password-area .pw-area-input input {
+  width: 36rem;
+  height: 4rem;
+  padding: 8px 15px 9px;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  color: #dbdbdb;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.join-container .join-wrap .password-area .pw-area-input:nth-of-type(2) input {
+  background-color: #fafafa;
+}
+.join-container .join-wrap .password-area .pw-area-input input:hover {
+  background-color: #fafafa;
+}
+.join-container .join-wrap .password-area .password-confirm-area h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+.join-container .join-wrap .password-area .password-confirm-area input {
+  width: 36rem;
+  height: 4rem;
+  padding: 8px 15px 9px;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+  color: #dbdbdb;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.join-container .join-wrap .agreement h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+.join-container .join-wrap .agreement div {
+  width: 100%;
+  height: 40rem;
+  background-color: aqua;
+  
+}
+.join-container .join-wrap .join-btn {
+  width: 36rem;
+  height: 5rem;
+  background-color: #35c5f0;
+  color: #fff;
+  padding: 11px 10px;
+  border-radius: 4px;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.join-container .join-wrap .join-btn:hover {
+  background-color: #09addb;
+}
+.join-container .join-wrap .id-check {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.join-container .join-wrap .id-check a {
+  margin-left: 1rem;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.join-container .join-wrap .id-check a:hover {
+  opacity: 0.7;
+}

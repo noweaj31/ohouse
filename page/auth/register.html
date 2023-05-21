@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="../../assets/style/reset.css" />
     <link rel="stylesheet" href="../../assets/style/font.css" />
     <link rel="stylesheet" href="../../assets/style/layout.css" />
+    <link rel="stylesheet" href="../../assets/style/join.css">
     <title>register</title>
   </head>
   <body>
-    <div>
-      <header>
+    <div class="join-container">
+      <div>
+        <header class="logo">
         <a href="/"><img src="/assets/image/login-logo.png" alt="" /></a>
       </header>
-      <div>
+      <div class="join-wrap">
         <div class="join-area">
           <h1>회원가입</h1>
           <div class="sns-area">
             <p>SNS계정으로 간편하게 회원가입</p>
-            <div class="icon-ara">
+            <div class="icon-area">
               <a href=""><img src="/assets/image/facebook.png" alt="" /></a>
               <a href=""><img src="/assets/image/kakaotalk.png" alt="" /></a>
               <a href=""><img src="/assets/image/naver.png" alt="" /></a>
@@ -28,8 +30,9 @@
         </div>
         <div class="email-area">
           <h2>이메일</h2>
-          <div>
-            <input type="text" placeholder="이메일" />
+          
+            <div>
+              <input type="text" placeholder="이메일" />
             <span>@</span>
             <select name="" id="">
               <option value="">선택해주세요</option>
@@ -43,8 +46,9 @@
               <option value="">icloud.com</option>
               <option value="">직접입력</option>
             </select>
+            </div>
             <button>이메일 인증하기</button>
-          </div>
+          
         </div>
         <div class="password-area">
           <div class="pw-area-input">
@@ -57,12 +61,19 @@
             <input type="text" placeholder="비밀번호 확인" />
           </div>
           <div class="pw-area-input">
-            <h2>비밀번호</h2>
-            <p>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</p>
-            <input type="text" placeholder="비밀번호" />
+            <h2>닉네임</h2>
+            <p>다른 유저와 겹치지 않도록 입력해주세요. (2~15자)</p>
+            <input type="text" placeholder="별명 (2~15자)" />
           </div>
         </div>
-        <div class="agreement"></div>
+        <div class="agreement">
+          <h2>약관동의</h2>
+          <div>
+          </div>
+        </div>
+        <button class="join-btn">회원가입하기</button>
+        <p class="id-check">이미 아이디가 있으신가요?<a href="">로그인</a></p>
+      </div>
       </div>
     </div>
   </body>
