@@ -185,7 +185,7 @@
   margin-bottom: 1.2rem;
 }
 .join-container .join-wrap .agreement-area .check_input-area {
-  height: 27.2rem;
+  
   width: 100%;
   padding: 1.8rem;
   display: flex;
@@ -204,15 +204,32 @@
   border: 1px solid gray;
   opacity: 70%;
   border-radius: 2px;
+  position: relative;
+}
+.check_input:hover {
+  background-color: #bfc6cb;
 }
 
 .check_input:checked {
+  background-color: rgb(53, 197, 240);
+  border: rgb(53, 197, 240);
   
 }
-
 .check_input:checked::after {
-  content:'';
+  content:"\f00c";
+  font-family:"Font Awesome 5 free";
+  font-weight:900;
+  color:#fff;
+  background-color:rgb(53, 197, 240);
+  position: absolute;
+  font-size:13px;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%);
 }
+
+
+
 .join-container .join-wrap .agreement-area .check_input-area label .the-entire {
   font-size: 1.4rem;
   font-weight: 700;
