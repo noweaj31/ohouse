@@ -13,6 +13,7 @@
   width: 100%;
 }
 .join-container .join-wrap {
+  width: 36rem;
   padding: 6rem 0;
   margin: 0 28.5rem;
 }
@@ -40,32 +41,47 @@
   margin: 0 1rem;
 }
 .join-container .join-wrap .email-area {
+  
   padding: 3rem 0;
 }
-.join-container .join-wrap .email-area h2 {
+.join-container .join-wrap .email-area label {
+  display: flex;
   font-size: 1.6rem;
   margin: 0 0 1.2rem;
 }
-.join-container .join-wrap .email-area div {
+.join-container .join-wrap .email-area .email-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.join-container .join-wrap .email-area div input {
+.join-container .join-wrap .email-area .email-text input {
   width: 17rem;
   height: 4rem;
   padding: 0 1.5rem;
   
 }
-.join-container .join-wrap .email-area div input:hover {
+.join-container .join-wrap .email-area .email-text input:hover {
   background-color: #fafafa;
 }
-.join-container .join-wrap .email-area div span {
+.join-container .join-wrap .email-area .email-text span {
   font-size: 1.5rem;
   color: #dbdbdb;
   
 }
-.join-container .join-wrap .email-area div select {
+.join-container .join-wrap .email-area .email-text .select {
+  display: flex;
+  position: relative;
+}
+.join-container .join-wrap .email-area .email-text .select i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  
+}
+.join-container .join-wrap .email-area .email-text select {
+  
+  appearance: none;
   width: 17rem;
   height: 4rem;
   padding: 0 1.5rem;
@@ -82,9 +98,10 @@
   font-size: 1.7rem;
   font-weight: 700;
 }
-.join-container .join-wrap .password-area .pw-area-input h2 {
+.join-container .join-wrap .password-area .pw-area-input label {
   font-size: 1.6rem;
   margin-bottom: 1.2rem;
+  font-weight: 700;
 }
 .join-container .join-wrap .password-area .pw-area-input p {
   color: rgb(130, 140, 148);
@@ -108,9 +125,10 @@
 .join-container .join-wrap .password-area .pw-area-input input:hover {
   background-color: #fafafa;
 }
-.join-container .join-wrap .password-area .password-confirm-area h2 {
+.join-container .join-wrap .password-area .password-confirm-area label {
   font-size: 1.6rem;
   margin-bottom: 1.2rem;
+  font-weight: 700;
 }
 .join-container .join-wrap .password-area .password-confirm-area input {
   width: 36rem;
@@ -124,16 +142,16 @@
   margin-bottom: 3rem;
 }
 
-.join-container .join-wrap .agreement h2 {
+.join-container .join-wrap .agreement-area label {
+  display: flex;
+  align-items: center;
   font-size: 1.6rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.8rem;
 }
-.join-container .join-wrap .agreement div {
-  width: 100%;
-  height: 40rem;
-  background-color: aqua;
-  
+.join-container .join-wrap .agreement-area label p {
+  margin-left: 6px;
 }
+
 .join-container .join-wrap .join-btn {
   width: 36rem;
   height: 5rem;
@@ -160,4 +178,82 @@
 }
 .join-container .join-wrap .id-check a:hover {
   opacity: 0.7;
+}
+.join-container .join-wrap .agreement-area .agreement-area-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.join-container .join-wrap .agreement-area .check_input-area {
+  height: 27.2rem;
+  width: 100%;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #EAEDEF;
+  margin-bottom: 20px;
+}
+.join-container .join-wrap .agreement-area .check_input-area label {
+  display: flex;
+  position: relative;
+}
+.check_input {
+  appearance: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid gray;
+  opacity: 70%;
+  border-radius: 2px;
+}
+
+.check_input:checked {
+  
+}
+
+.check_input:checked::after {
+  content:'';
+}
+.join-container .join-wrap .agreement-area .check_input-area label .the-entire {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(1) p:nth-of-type(2) {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #828C94;
+}
+.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(1) {
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid #EAEDEF;;
+}
+.join-container .join-wrap .agreement-area .check_input-area label .check_input-title {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  color: #2F3438;
+}
+.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(2) span,
+.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(3) span,
+.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(4) span {
+  padding-left: 2px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #009FCE;
+}
+.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(5) span,
+.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(6) span {
+  padding-left: 2px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #828C94;
+}
+.join-container .join-wrap .agreement-area .check_input-area label i {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+}
+.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(6) {
+  margin-bottom: 0;
+  
 }

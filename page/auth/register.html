@@ -7,73 +7,115 @@
     <link rel="stylesheet" href="../../assets/style/reset.css" />
     <link rel="stylesheet" href="../../assets/style/font.css" />
     <link rel="stylesheet" href="../../assets/style/layout.css" />
-    <link rel="stylesheet" href="../../assets/style/join.css">
+    <link rel="stylesheet" href="../../assets/style/join.css" />
+    <script
+      src="https://kit.fontawesome.com/11c4b226a9.js"
+      crossorigin="anonymous"
+    ></script>
     <title>register</title>
   </head>
   <body>
     <div class="join-container">
       <div>
         <header class="logo">
-        <a href="/"><img src="/assets/image/login-logo.png" alt="" /></a>
-      </header>
-      <div class="join-wrap">
-        <div class="join-area">
-          <h1>회원가입</h1>
-          <div class="sns-area">
-            <p>SNS계정으로 간편하게 회원가입</p>
-            <div class="icon-area">
-              <a href=""><img src="/assets/image/facebook.png" alt="" /></a>
-              <a href=""><img src="/assets/image/kakaotalk.png" alt="" /></a>
-              <a href=""><img src="/assets/image/naver.png" alt="" /></a>
+          <a href="/"><img src="../../assets/image/login-logo.png" alt="" /></a>
+        </header>
+        <div class="join-wrap">
+          <div class="join-area">
+            <h1>회원가입</h1>
+            <div class="sns-area">
+              <p>SNS계정으로 간편하게 회원가입</p>
+              <div class="icon-area">
+                <a href=""
+                  ><img src="../../assets/image/facebook.png" alt=""
+                /></a>
+                <a href=""
+                  ><img src="../../assets/image/kakaotalk.png" alt=""
+                /></a>
+                <a href=""><img src="../../assets/image/naver.png" alt="" /></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="email-area">
-          <h2>이메일</h2>
-          
-            <div>
+          <div class="email-area">
+            <label>이메일</label>
+            <div class="email-text">
               <input type="text" placeholder="이메일" />
-            <span>@</span>
-            <select name="" id="">
-              <option value="">선택해주세요</option>
-              <option value="">naver.com</option>
-              <option value="">hanmail.net</option>
-              <option value="">daum.net</option>
-              <option value="">gmail.com</option>
-              <option value="">nate.com</option>
-              <option value="">hotmail.com</option>
-              <option value="">outlook.com</option>
-              <option value="">icloud.com</option>
-              <option value="">직접입력</option>
-            </select>
+              <span>@</span>
+              <div class="select">
+                <select name="" id="">
+                  <option value="">선택해주세요</option>
+                  <option value="">naver.com</option>
+                  <option value="">hanmail.net</option>
+                  <option value="">daum.net</option>
+                  <option value="">gmail.com</option>
+                  <option value="">nate.com</option>
+                  <option value="">hotmail.com</option>
+                  <option value="">outlook.com</option>
+                  <option value="">icloud.com</option>
+                  <option value="">직접입력</option>
+                </select>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
             </div>
             <button>이메일 인증하기</button>
-          
+          </div>
+          <div class="password-area">
+            <div class="pw-area-input">
+              <label>비밀번호</label>
+              <p>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</p>
+              <input type="text" placeholder="비밀번호" />
+            </div>
+            <div class="password-confirm-area">
+              <label>비밀번호 확인</label>
+              <input type="text" placeholder="비밀번호 확인" />
+            </div>
+            <div class="pw-area-input">
+              <label>닉네임</label>
+              <p>다른 유저와 겹치지 않도록 입력해주세요. (2~15자)</p>
+              <input type="text" placeholder="별명 (2~15자)" />
+            </div>
+          </div>
+          <div class="agreement-area">
+            <p class="agreement-area-title">약관동의</p>
+            <div class="check_input-area">
+              <label>
+                <input class="check_input" type="checkbox">
+                <p class="the-entire">전체동의</p>
+                <p>선택항목에 대한 동의 포함</p>
+              </label>
+              <label>
+                <input class="check_input" type="checkbox">
+                <p class="check_input-title">만 14세 이상입니다</p>
+                <span>(필수)</span>
+              </label>
+              <label>
+                <input class="check_input" type="checkbox">
+                <p class="check_input-title">이용약관</p>
+                <span>(필수)</span>
+                <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+              </label>
+              <label>
+                <input class="check_input" type="checkbox">
+                <p class="check_input-title">개인정보수집 및 이용동의</p>
+                <span>(필수)</span>
+                <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+              </label>
+              <label>
+                <input class="check_input" type="checkbox">
+                <p class="check_input-title">개인정보 마케팅 활용 동의</p>
+                <span>(선택)</span>
+                <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+              </label>
+              <label>
+                <input class="check_input" type="checkbox">
+                <p class="check_input-title">개이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신</p>
+                <span>(선택)</span>
+              </label>
+            </div>
+          </div>
+          <button class="join-btn">회원가입하기</button>
+          <p class="id-check">이미 아이디가 있으신가요?<a href="">로그인</a></p>
         </div>
-        <div class="password-area">
-          <div class="pw-area-input">
-            <h2>비밀번호</h2>
-            <p>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</p>
-            <input type="text" placeholder="비밀번호" />
-          </div>
-          <div class="password-confirm-area">
-            <h2>비밀번호 확인</h2>
-            <input type="text" placeholder="비밀번호 확인" />
-          </div>
-          <div class="pw-area-input">
-            <h2>닉네임</h2>
-            <p>다른 유저와 겹치지 않도록 입력해주세요. (2~15자)</p>
-            <input type="text" placeholder="별명 (2~15자)" />
-          </div>
-        </div>
-        <div class="agreement">
-          <h2>약관동의</h2>
-          <div>
-          </div>
-        </div>
-        <button class="join-btn">회원가입하기</button>
-        <p class="id-check">이미 아이디가 있으신가요?<a href="">로그인</a></p>
-      </div>
       </div>
     </div>
   </body>
