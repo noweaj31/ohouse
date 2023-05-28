@@ -66,4 +66,14 @@ li {
   padding: 0;
 }
 
+button:disabled {
+  background-color: #c7effb !important;
+  border-color: #c7effb !important;
+  color: #fff !important;
+  cursor: not-allowed;
+}
+
+input:focus {
+  outline: none;
+}
 

@@ -10,8 +10,15 @@
 
 .join-container .logo {
   font-size: 1.5rem;
+  width: 8.8rem;
+  height: 3.1rem;
+  text-align: left;
+  
+}
+.join-container .join-content {
   width: 100%;
 }
+
 .join-container .join-wrap {
   width: 36rem;
   padding: 6rem 0;
@@ -308,8 +315,8 @@
 }
 .reset-pw-area .input-area button {
   padding: 7px 10px;
-  background-color: #a3e4f8;
-  border-color: #a3e4f8;
+  background-color: rgb(53, 197, 240);
+  border-color: rgb(53, 197, 240);
   color: #e5f9ff;
   font-size: 1.4rem;
   height: 3.1rem;
@@ -318,8 +325,8 @@
   
 }
 .reset-pw-area .e-mail-btn {
-  background-color: #c7effb;
-  border-color: #c7effb;
+  background-color: rgb(53, 197, 240);
+  border-color: rgb(53, 197, 240);
   color: #fff;
   height: 5rem;
   font-size: 1.7rem;
@@ -345,3 +352,41 @@
   line-height: 20px;
   font-weight: bold;
 }
+
+
+@media screen and (max-width: 767px) {
+  .join-container {
+    margin: 0 15px;
+    padding: 40px 0;
+  }
+  .join-container .join-wrap {
+    margin: 0;
+    width: 100%;
+  }
+  .join-container .join-wrap .email-area .email-text input {
+    width: 100%;
+  }
+  .join-container .join-wrap .email-area .email-text .select {
+    width: 100%;
+  }
+  .join-container .join-wrap .email-area .email-text select {
+    width: 100%;
+  }
+  .join-container .join-wrap .email-area .email-text span {
+    padding: 4px;
+
+  }
+  .join-container .join-wrap .email-area button {
+    width: 100%;
+  }
+ .join-container .join-wrap .password-area .password-confirm-area input  {
+    width: 100%;
+  }
+  .join-container .join-wrap .password-area .pw-area-input input {
+    width: 100%;
+  }
+  .join-container .join-wrap .join-btn {
+    width: 100%;
+  }
+}
+
