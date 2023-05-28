@@ -17,12 +17,14 @@
 }
 .join-container .join-content {
   width: 100%;
+  
 }
 
 .join-container .join-wrap {
   width: 36rem;
   padding: 6rem 0;
   margin: 0 28.5rem;
+  margin: 0 auto;
 }
 .join-container .join-wrap .join-area h1 {
   font-size: 2rem;
