@@ -159,18 +159,72 @@
   height: 4rem;
   overflow: hidden;
 }
-.nav-container .nav-content .nav-search .ani-container .ani-area {
+.nav-container .nav-content .nav-search .ani-container .ani-area1 {
   display: flex;
   align-items: center;
   height: 5rem;
   animation: search 10s infinite;
 }
-.nav-container .nav-content .nav-search .ani-container .ani-area .num-area {
+.nav-container .nav-content .nav-search .ani-container .ani-area2 {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  animation: search2 10s infinite;
+}
+.nav-container .nav-content .nav-search .ani-container .ani-area3 {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  animation: search3 10s infinite;
+}
+.nav-container .nav-content .nav-search .ani-container .ani-area4 {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  animation: search4 10s infinite;
+}
+.nav-container .nav-content .nav-search .ani-container .ani-area5 {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  animation: search5 10s infinite;
+}
+.nav-container .nav-content .nav-search .ani-container .ani-area6 {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  animation: search6 10s infinite;
+}
+.nav-container .nav-content .nav-search .ani-container .ani-area7 {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  animation: search7 10s infinite;
+}
+.nav-container .nav-content .nav-search .ani-container .ani-area8 {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  animation: search8 10s infinite;
+}
+.nav-container .nav-content .nav-search .ani-container .ani-area9 {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  animation: search9 10s infinite;
+}
+.nav-container .nav-content .nav-search .ani-container .ani-area10 {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  animation: search10 10s infinite;
+}
+.nav-container .nav-content .nav-search .ani-container .num-area {
   position: relative;
   width: 2rem;
   height: 100%;
 }
-.nav-container .nav-content .nav-search .ani-container .ani-area .num {
+.nav-container .nav-content .nav-search .ani-container .num {
   font-size: 1.6rem;
   font-weight: 700;
   top: 50%;
@@ -178,12 +232,12 @@
   transform: translate(-50%, -50%);
   position: absolute;
 }
-.nav-container .nav-content .nav-search .ani-container .ani-area p {
+.nav-container .nav-content .nav-search .ani-container p {
   font-size: 1.6rem;
   margin-left: 1rem;
   
 }
-.nav-container .nav-content .nav-search .ani-container .ani-area .ic-area {
+.nav-container .nav-content .nav-search .ani-container .ic-area {
   width: 24px;
   height: 100%;
   position: relative;
@@ -213,43 +267,85 @@
   0% {
     transform: translate3d(0, 0, 0);
   }
-  8% {
+  15% {
+    transform: translate3d(0, 0, 0);
+  }
+  30% {
     transform: translate3d(0, -50px, 0);
   }
-  16% {
-    transform: translate3d(0, -100px, 0);
-  }
-  24% {
-    transform: translate3d(0, -150px, 0);
-  }
-  32% {
-    transform: translate3d(0, -200px, 0);
-  }
-  40% {
-    transform: translate3d(0, -250px, 0);
-  }
-  48% {
-    transform: translate3d(0, -300px, 0);
-  }
-  56% {
-    transform: translate3d(0, -350px, 0);
-  }
-  64% {
-    transform: translate3d(0, -400px, 0);
-  }
-  72% {
-    transform: translate3d(0, -450px, 0);
-  }
-  80% {
+  30.5% {
     transform: translate3d(0, 50px, 0);
   }
-  88% {
+  45% {
+    transform: translate3d(0, 100px, 0);
+  }
+  60% {
     transform: translate3d(0, 50px, 0);
   }
-  95% {
-    transform: translate3d(0, 0px, 0);
+  75% {
+    transform: translate3d(0, 50px, 0);
+  }
+  90% {
+    transform: translate3d(0, 0, 0);
+  }
+  
+}
+@keyframes search2 {
+  0% {
+    transform: translate3d(0, 50px, 0);
+  }
+  15% {
+    transform: translate3d(0, 50px, 0);
+  }
+  30% {
+    transform: translate3d(0, 0, 0);
+  }
+  45% {
+    transform: translate3d(0, 0, 0);
+  }
+  60% {
+    transform: translate3d(0, -50px, 0);
+  }
+  60.5% {
+    transform: translate3d(0, 50px, 0);
+  }
+  75% {
+    transform: translate3d(0, 100px, 0);
+  }
+  90% {
+    transform: translate3d(0, 50px, 0);
+  }
+  
+}
+
+@keyframes search3 {
+  0% {
+    transform: translate3d(0, 100px, 0);
+  }
+  15% {
+    transform: translate3d(0, 100px, 0);
+  }
+  30% {
+    transform: translate3d(0, 50px, 0);
+  }
+  45% {
+    transform: translate3d(0, 50px, 0);
+  }
+  60% {
+    transform: translate3d(0, 0, 0);
+  }
+  75% {
+    transform: translate3d(0, 0, 0);
+  }
+  90% {
+    transform: translate3d(0, -50px, 0);
+  }
+  90.5% {
+    transform: translate3d(0, 50px, 0);
   }
 }
+
+
 @media screen and (max-width: 1023px) {
   .nav-container .nav-content {
     padding: 0 40px;
