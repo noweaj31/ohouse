@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- sliding jquery -->
+    <script src="./js/custom.js"></script>
     <link rel="stylesheet" href="../assets/style/layout.css" />
     <title>header</title>
   </head>
@@ -60,12 +77,16 @@
               <div class="ani-container">
                 <div class="ani-area1">
                   <div class="num-area"><span class="num">1</span></div>
-                  <div class="ic-area"><i class="fa-solid fa-caret-up"></i></div>
+                  <div class="ic-area">
+                    <i class="fa-solid fa-caret-up"></i>
+                  </div>
                   <p>집들이</p>
                 </div>
                 <div class="ani-area2">
                   <div class="num-area"><span class="num">2</span></div>
-                  <div class="ic-area"><i class="fa-solid fa-caret-up"></i></div>
+                  <div class="ic-area">
+                    <i class="fa-solid fa-caret-up"></i>
+                  </div>
                   <p>작업실</p>
                 </div>
                 <div class="ani-area3">
@@ -74,11 +95,314 @@
                   <p>센서 휴지통</p>
                 </div>
               </div>
-              <button class="ani-btn"><i class="fa-solid fa-chevron-down"></i></button>
+              <button class="ani-btn">
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
             </div>
           </div>
         </div>
       </nav>
     </header>
+    <section>
+      <div class="main-page">
+        <div class="main-img">
+          <div class="img-area">
+            <p class="img-title">상반기 결산🚩 데스크테리어 꿀템 TOP 7</p>
+            <div class="member">
+              <img src="/assets/image/icon.avif" alt="" />
+              <p>오늘의집 에디터</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-slick">
+          <img src="/assets/image/slick1.png" alt="" />
+          <img src="/assets/image/slick2.png" alt="" />
+          <img src="/assets/image/slick3.jpeg" alt="" />
+          <img src="/assets/image/slick4.jpeg" alt="" />
+          <img src="/assets/image/slick5.png" alt="" />
+          <img src="/assets/image/slick6.jpeg" alt="" />
+          <img src="/assets/image/slick7.jpg" alt="" />
+          <img src="/assets/image/slick8.png" alt="" />
+          <img src="/assets/image/slick9.png" alt="" />
+          <img src="/assets/image/slick10.jpg" alt="" />
+          <img src="/assets/image/slick11.png" alt="" />
+          <img src="/assets/image/slick12.png" alt="" />
+          <img src="/assets/image/slick13.jpg" alt="" />
+          <img src="/assets/image/slick14.png" alt="" />
+        </div>
+      </div>
+      <div class="icon-container">
+        <div class="icon-area">
+          <div class="icon">
+            <a href="">
+              <img src="/assets/image/shop1.png" alt="" />
+              <span>쇼핑하기</span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="">
+              <img src="/assets/image/shop2.png" alt="" />
+              <span>이벤트예고</span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="">
+              <img src="/assets/image/shop3.png" alt="" />
+              <span>오늘의딜</span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="">
+              <img src="/assets/image/shop4.png" alt="" />
+              <span>오늘의발견</span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="">
+              <img src="/assets/image/shop5.png" alt="" />
+              <span>장보기</span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="">
+              <img src="/assets/image/shop6.png" alt="" />
+              <span>집들이</span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="">
+              <img src="/assets/image/shop7.png" alt="" />
+              <span>취향의발견</span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="">
+              <img src="/assets/image/shop8.png" alt="" />
+              <span>빠른배송</span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="">
+              <img src="/assets/image/shop9.png" alt="" />
+              <span>쉬운이사</span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="">
+              <img src="/assets/image/shop10.png" alt="" />
+              <span>리모델링</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="space-li1">
+        <div class="space-title">
+          <p class="title"><a href="">국민 평수 20평 대! 공간 배치법🙋‍♀️</a></p>
+          <p class="see-more"><a href="">더보기</a></p>
+        </div>
+        <div class="img-list">
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-1.jpg" alt="" />
+            </div>
+            <p>
+              <span>따스한 색감의 믹스 앤 매치!</span>25평 신혼집 스타일링
+              변천사
+            </p>
+          </div>
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space2.jpg" alt="" />
+            </div>
+            <p>
+              <span>부분 시공이지만 완벽하게!</span>따스한 25평 신혼 무드 완성!
+            </p>
+          </div>
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space3.jpg" alt="" />
+            </div>
+            <p><span>우드 감성 연출은 이렇게🤎</span>25평 웜톤 하우스</p>
+          </div>
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-4.jpeg" alt="" />
+            </div>
+            <p><span>감나무 품은 21평 연립주택</span>신혼집으로 재해석하다</p>
+          </div>
+        </div>
+        <div class="space-title">
+          <p class="title"><a href="">이거 어디꺼지?👀 인기템 BEST 💖</a></p>
+          <p class="see-more"><a href="">더보기</a></p>
+        </div>
+        <div class="img-list">
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-5.jpg" alt="" />
+            </div>
+            <p><span>앤틱한 무드의 </span>고급스러운 조명 9종 (ft.내돈내산)</p>
+          </div>
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-6.jpg" alt="" />
+            </div>
+            <p><span>우드 인테리어는 </span>딱 이렇게🌳 우드 아이템 TOP6</p>
+          </div>
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-7.jpeg" alt="" />
+            </div>
+            <p>
+              <span>트렌디한 사람은 </span>이미 안다는🖤 인기 급상승 브랜드 4
+            </p>
+          </div>
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-8.jpg" alt="" />
+            </div>
+            <p><span>러그 스타일링 비법 </span>그냥 깔고 있었다면?👀</p>
+          </div>
+        </div>
+        <div class="space-title">
+          <p class="title"><a href="">역대급 장마! 미리 준비해요 ☔</a></p>
+          <p class="see-more"><a href="">더보기</a></p>
+        </div>
+        <div class="img-list">
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-9.jpg" alt="" />
+            </div>
+            <p><span>축축한 양말 해방</span>💥 장마철 없어선 안될 필수템6</p>
+          </div>
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-10.jpg" alt="" />
+            </div>
+            <p>
+              <span>빨래 고민 끝</span>🎽 장마철 꼭 해야 할 구석구석 청소 루틴
+            </p>
+          </div>
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-11.jpeg" alt="" />
+            </div>
+            <p><span>축축한 현관 no!</span>깔끔 현관 만드는 우산꽂이 6</p>
+          </div>
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-12.jpg" alt="" />
+            </div>
+            <p><span>초경량부터 C자형 손잡이까지!</span>활용도 갑 우산5</p>
+          </div>
+        </div>
+        <div class="space-title">
+          <p class="title"><a href="">여름에 먹어야 제일 맛있어요! 🧊</a></p>
+          <p class="see-more"><a href="">더보기</a></p>
+        </div>
+        <div class="img-list">
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-13.png" alt="" />
+            </div>
+            <p>
+              <span>뻔하지 않고 신박한 </span>홈메이드 아이스크림 얼음틀 5🍧
+            </p>
+          </div>
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-14.jpeg" alt="" />
+            </div>
+            <p>
+              <span>이런 건 처음봐🍉 </span>눈이 즐거운 여름 과일 플레이팅🍉
+            </p>
+          </div>
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-15.jpeg" alt="" />
+            </div>
+            <p><span>SNS에서 핫해요! </span>놓치면 안될 올여름 신메뉴 음료 6</p>
+          </div>
+          <div class="img-container">
+            <div class="img-area">
+              <img src="/assets/image/space-16.jpeg" alt="" />
+            </div>
+            <p><span>빙수 러버들을 위한 </span>2023 호텔 망고빙수 총정리🤜🤛</p>
+          </div>
+        </div>
+      </div>
+      <div class="category">
+        <p class="title">카테고리별 상품 찾기</p>
+        <div class="category-list">
+          <div class="img-area">
+            <div><img src="/assets/image/c1.png" alt=""></div>
+            <span>가구</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c2.png" alt=""></div>
+            <span>패브릭</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c3.png" alt=""></div>
+            <span>가전·디지털</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c4.png" alt=""></div>
+            <span>주방용품</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c5.png" alt=""></div>
+            <span>식품</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c6.png" alt=""></div>
+            <span>데코·식물</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c7.png" alt=""></div>
+            <span>조명</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c8.png" alt=""></div>
+            <span>수납·정리</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c9.png" alt=""></div>
+            <span>생활용품</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c10.png" alt=""></div>
+            <span>생필품</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c11.png" alt=""></div>
+            <span>유아·아동</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c12.png" alt=""></div>
+            <span>반려동물</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c13.png" alt=""></div>
+            <span>캠핑·레저</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c14.png" alt=""></div>
+            <span>공구·DIY</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c15.png" alt=""></div>
+            <span>인테리어시공</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c16.png" alt=""></div>
+            <span>렌탈</span>
+          </div>
+          <div class="img-area">
+            <div><img src="/assets/image/c17.png" alt=""></div>
+            <span>장보기</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

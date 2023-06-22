@@ -2,10 +2,17 @@ $(document).ready(function () {
   $(".main-slick").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     arrows: true,
-    prevArrow: $("#aro1_prev"),
-    nextArrow: $("#aro1_next"),
+    
+  });
+  $("category-list").slick({
+    slidesToShow: 12,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+    
   });
 });
