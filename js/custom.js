@@ -5,8 +5,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: true,
-    
-  });
+    });
   $("category-list").slick({
     slidesToShow: 12,
     slidesToScroll: 1,
