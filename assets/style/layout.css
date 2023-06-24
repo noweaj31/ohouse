@@ -463,6 +463,7 @@ section {
   color: #2f3438;
   line-height: 20px;
 }
+
 /* space-img */
 .space-li1 {
   max-width: 1256px;
@@ -541,10 +542,14 @@ section {
 }
 .category .category-list {
   display: flex;
+  position: relative;
 }
 .category .category-list .img-area {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .category .category-list .img-area div {
   width: 7.2rem;
   height: 7.2rem;
@@ -707,7 +712,7 @@ section {
   color: rgb(47, 52, 56);
     font-weight: 500;
     padding: 0.6rem 1.6rem;
-    align-items: center;
+    
 }
 .today-deal .item-slick .more-btn .arrow {
   width: 40px;
