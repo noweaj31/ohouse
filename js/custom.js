@@ -4,14 +4,15 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    arrows: true,
-    });
-  $("category-list").slick({
-    slidesToShow: 12,
+    
+  });
+  $(".category-list").slick({
+    slidesToShow: 13,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    arrows: true,
     
   });
+
+  
 });

@@ -434,11 +434,11 @@ section {
   flex: 1 1 26.9rem;
   margin-left: 2rem;
   border-radius: 4px;
-  position: relative;
+  
  }
  .main-slick img {
   height: 100%;
-  position: absolute;
+  
  }
  .icon-container {
   max-width: 1256px;
@@ -590,11 +590,10 @@ section {
   margin-right: 2rem;
  }
  .today-deal .item-slick .item-area .img {
-  background-image: url(/assets/image/deal-1.jpeg);
+  
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 150%;
   border-radius: 4px;
   position: relative;
  }
@@ -677,6 +676,7 @@ section {
  }
  .today-deal .item-slick .item-area .img-info .special-price {
   margin-top: 6px;
+  display: flex;
  }
  .today-deal .item-slick .item-area .img-info .special-price img {
   margin-right: 4px;
