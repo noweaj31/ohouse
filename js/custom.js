@@ -11,12 +11,14 @@ $(document).ready(function () {
     slidesToScroll: 4,
     autoplay: false,
     autoplaySpeed: 2000,
-    
+    arrows: true,
+    prevArrow: $("#aro_prev"),
+    nextArrow: $("#aro_next"),
   });
   $(".item-slick").slick({
     slidesToShow: 4,
     slidesToScroll: 4,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     
   });
