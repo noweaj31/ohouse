@@ -6,21 +6,24 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     
   });
-  $(".category-list").slick({
+  $(".img-slick").slick({
     slidesToShow: 13,
     slidesToScroll: 4,
     autoplay: false,
     autoplaySpeed: 2000,
     arrows: true,
+    Infinity: false,
     prevArrow: $("#aro_prev"),
     nextArrow: $("#aro_next"),
   });
-  $(".item-slick").slick({
+  $(".item-container").slick({
     slidesToShow: 4,
     slidesToScroll: 4,
     autoplay: false,
     autoplaySpeed: 2000,
-    
+    arrows: true,
+    prevArrow: $("#aro__prev"),
+    nextArrow: $("#aro__next"),
   });
   
 });
