@@ -7,12 +7,12 @@ $(document).ready(function () {
     
   });
   $(".img-slick").slick({
-    slidesToShow: 13,
+    slidesToShow: 13.7,
     slidesToScroll: 4,
     autoplay: false,
     autoplaySpeed: 2000,
     arrows: true,
-    Infinity: false,
+    infinite: false,
     prevArrow: $("#aro_prev"),
     nextArrow: $("#aro_next"),
   });
