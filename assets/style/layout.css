@@ -363,9 +363,21 @@ main {
   margin-left: 2rem;
   border-radius: 4px;
   position: relative;
+  
 }
-.main-sec .main-slick img {
+.main-sec .main-slick .slick-img {
+  width: 100% !important;
+  height: 100% !important;
   position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+.main-sec .main-slick .slick-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .icon-container {
@@ -928,6 +940,77 @@ main {
 .interior-pic .interior-slick .interior-img .img-area .more-btn span {
   font-size: 1.4rem;
   line-height: 2rem;
+}
+/* review-content */
+.review-content {
+  max-width: 1256px;
+  margin: 4rem auto;
+  padding: 0 6rem;
+}
+.review-content .space-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+.review-content .space-title .title {
+  font-weight: 700;
+  color: rgb(47, 52, 56);
+  letter-spacing: -0.3px;
+  font-size: 20px;
+  line-height: 28px;
+}
+.review-content .space-title .see-more {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgb(53, 197, 240);
+}
+.review-content .review-area {
+  display: flex;
+  gap: 2rem;
+}
+.review-content .review-area .review-list {
+  width: 33.33%
+  
+}
+.review-content .review-area .review-list .img-area {
+  
+  border-radius: 0.4rem;
+  overflow: hidden;
+  position: relative;
+}
+.review-content .review-area .review-list .img-area::before {
+  content:'';
+  display: block;
+  padding-top: 66.6667%;
+}
+.review-content .review-area .review-list .img-area img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.review-content .review-area .review-list .list-title {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+.review-content .review-area .review-list .content {
+    margin-top: 0.2rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+    
 }
 /* footer */
 footer {
