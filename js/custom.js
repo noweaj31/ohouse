@@ -39,5 +39,29 @@ $(document).ready(function () {
     prevArrow: $("#aro___prev"),
     nextArrow: $("#aro___next"),
   });
+
+  $(".exh-area").slick({
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    arrows: true,
+    infinite: false,
+    arrows: true,
+    prevArrow: $("#aro____prev"),
+    nextArrow: $("#aro____next"),
+  });
+
+  $(".cate-list").slick({
+    slidesToShow: 15,
+    slidesToScroll: 2,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    arrows: true,
+    infinite: false,
+    arrows: true,
+    prevArrow: $("#aro_____prev"),
+    nextArrow: $("#aro_____next"),
+  });
   
 });
