@@ -52,16 +52,16 @@ $(document).ready(function () {
     nextArrow: $("#aro____next"),
   });
 
-  $(".cate-list").slick({
-    slidesToShow: 15,
-    slidesToScroll: 2,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    arrows: true,
-    infinite: false,
-    arrows: true,
-    prevArrow: $("#aro_____prev"),
-    nextArrow: $("#aro_____next"),
-  });
+  // $(".cate-list").slick({
+  //   slidesToShow: 15,
+  //   slidesToScroll: 2,
+  //   autoplay: false,
+  //   autoplaySpeed: 2000,
+  //   arrows: true,
+  //   infinite: false,
+  //   arrows: true,
+  //   prevArrow: $("#aro_____prev"),
+  //   nextArrow: $("#aro_____next"),
+  // });
   
 });
