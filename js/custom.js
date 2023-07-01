@@ -60,6 +60,7 @@ $(document).ready(function () {
     prevArrow: $("#aro____prev"),
     nextArrow: $("#aro____next"),
   });
+ 
 
   $(".cate-list").slick({
     slidesToShow: 15,
@@ -72,28 +73,29 @@ $(document).ready(function () {
     prevArrow: $("#aro_____prev"),
     nextArrow: $("#aro_____next"),
   });
-  const slickSlider = $(".slider-wrap");
+  const slickSlider = $(".cate-list");
         const slideCount = slickSlider.slick("getSlick").slideCount;
         const slidesToShow = slickSlider.slick("getSlick").options.slidesToShow;
-        $(".prev").hide();
-        $(".prev").click(function () {
-          $(".slider-wrap").slick("slickPrev");
-          const currentSlide = $(".slider-wrap").slick("slickCurrentSlide");
+        $("#aro_____prev").hide();
+        $("#aro_____prev").click(function () {
+          $(".cate-list").slick("slickPrev");
+          const currentSlide = $(".cate-list").slick("slickCurrentSlide");
           if (slideCount - slidesToShow !== currentSlide) {
-            $(".next").show();
+            $("#aro_____next").show();
           }
           if (currentSlide === 0) {
-            $(".prev").hide();
+            $("#aro_____prev").hide();
           }
         });
 
-        $(".next").click(function () {
-          $(".slider-wrap").slick("slickNext");
-          const currentSlide = $(".slider-wrap").slick("slickCurrentSlide");
+        $("#aro_____next").click(function () {
+          $(".cate-list").slick("slickNext");
+          const currentSlide = $(".cate-list").slick("slickCurrentSlide");
           if (slideCount - slidesToShow === currentSlide) {
-            $(".next").hide();
+            $("#aro_____next").hide();
           } else {
-            $(".prev").show();
+            $("#aro_____prev").show();
           }
         });
+        
 });
