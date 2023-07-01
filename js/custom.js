@@ -23,8 +23,8 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     arrows: true,
     infinite: false,
-    prevArrow: $("#aro_prev"),
-    nextArrow: $("#aro_next"),
+    prevArrow: $(".img-slick .prev"),
+    nextArrow: $(".img-slick .next"),
   });
   
   $(".item-container").slick({
@@ -33,8 +33,8 @@ $(document).ready(function () {
     autoplay: false,
     autoplaySpeed: 2000,
     arrows: true,
-    prevArrow: $("#aro__prev"),
-    nextArrow: $("#aro__next"),
+    prevArrow: $(".item-container .prev"),
+    nextArrow: $(".item-container .next"),
   });
   
   $(".interior-img").slick({
@@ -45,8 +45,8 @@ $(document).ready(function () {
     arrows: true,
     infinite: false,
     arrows: true,
-    prevArrow: $("#aro___prev"),
-    nextArrow: $("#aro___next"),
+    prevArrow: $(".interior-img .prev"),
+    nextArrow: $(".interior-img .next"),
   });
 
   $(".exh-area").slick({
@@ -57,45 +57,80 @@ $(document).ready(function () {
     arrows: true,
     infinite: false,
     arrows: true,
-    prevArrow: $("#aro____prev"),
-    nextArrow: $("#aro____next"),
+    prevArrow: $(".exh-area .prev"),
+    nextArrow: $(".exh-area .next"),
   });
  
+    const slickSlider = $(".cate-list");
+    const slidesToShow = 15;
 
-  $(".cate-list").slick({
-    slidesToShow: 15,
-    slidesToScroll: 4,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    arrows: true,
-    infinite: false,
-    arrows: true,
-    prevArrow: $("#aro_____prev"),
-    nextArrow: $("#aro_____next"),
-  });
-  const slickSlider = $(".cate-list");
-        const slideCount = slickSlider.slick("getSlick").slideCount;
-        const slidesToShow = slickSlider.slick("getSlick").options.slidesToShow;
-        $("#aro_____prev").hide();
-        $("#aro_____prev").click(function () {
-          $(".cate-list").slick("slickPrev");
-          const currentSlide = $(".cate-list").slick("slickCurrentSlide");
-          if (slideCount - slidesToShow !== currentSlide) {
-            $("#aro_____next").show();
-          }
-          if (currentSlide === 0) {
-            $("#aro_____prev").hide();
-          }
-        });
+    slickSlider.slick({
+      infinite: false,
+      slidesToShow: slidesToShow,
+      slidesToScroll: slidesToShow,
+      adaptiveHeight: false,
+      arrows: false,
+      draggable: false
+    });
 
-        $("#aro_____next").click(function () {
-          $(".cate-list").slick("slickNext");
-          const currentSlide = $(".cate-list").slick("slickCurrentSlide");
-          if (slideCount - slidesToShow === currentSlide) {
-            $("#aro_____next").hide();
-          } else {
-            $("#aro_____prev").show();
-          }
-        });
+    let slideCount = slickSlider.slick("getSlick").slideCount;
+    let currentSlide = 0;
+
+    console.log(slideCount);
+
+    $(".prev").hide();
+    $(".prev").click(function () {
+      if (currentSlide > 0) {
+        currentSlide -= slidesToShow;
+        $(".cate-list").slick("slickGoTo", currentSlide);
+
+        if (currentSlide === 0) {
+          $(".prev").hide();
+        }
+
+        $(".next").show();
+      }
+
+      
+    });
+
+    $(".next").click(function () {
+      if (currentSlide < slideCount - slidesToShow) {
+        currentSlide += slidesToShow;
+        $(".cate-list").slick("slickGoTo", currentSlide);
+
+        if (currentSlide >= slideCount - slidesToShow) {
+          $(".next").hide();
+        }
+
+        $(".prev").show();
+      }
+    });
+
+  const endTime = new Date();
+        endTime.setTime(endTime.getTime() + 8 * 60 * 60 * 1000);
+        console.log(endTime);
+
+        setInterval(() => {
+          const currentTime = new Date().getTime();
+          const remainingTime = endTime - currentTime;
+
+          let hours = Math.floor(
+            (remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          let minutes = Math.floor(
+            (remainingTime % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+          hours = hours < 10 ? "0" + hours : hours;
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+
+          document.getElementById("hours").textContent = hours;
+          document.getElementById("minutes").textContent = minutes;
+          document.getElementById("seconds").textContent = seconds;
+        }, 1000);
+
         
 });

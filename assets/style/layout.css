@@ -7,6 +7,11 @@
   padding: 2rem 6rem;
   box-sizing: border-box;
 }
+.header-container {
+  position: sticky;
+  background-color: #fff;
+  
+}
 .header-container .header-content .bar {
   display: none;
 }
@@ -154,12 +159,12 @@
 }
 .nav-container .nav-content .nav-search {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex: 0 0 auto;
 }
 .nav-container .nav-content .nav-search .ani-container {
-  margin-right: 1.5rem;
-  align-items: center;
+  margin-right: 4rem;
   height: 4rem;
   overflow: hidden;
 }
@@ -175,54 +180,7 @@
   height: 5rem;
   animation: search2 10s infinite;
 }
-.nav-container .nav-content .nav-search .ani-container .ani-area3 {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  animation: search3 10s infinite;
-}
-.nav-container .nav-content .nav-search .ani-container .ani-area4 {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  animation: search4 10s infinite;
-}
-.nav-container .nav-content .nav-search .ani-container .ani-area5 {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  animation: search5 10s infinite;
-}
-.nav-container .nav-content .nav-search .ani-container .ani-area6 {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  animation: search6 10s infinite;
-}
-.nav-container .nav-content .nav-search .ani-container .ani-area7 {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  animation: search7 10s infinite;
-}
-.nav-container .nav-content .nav-search .ani-container .ani-area8 {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  animation: search8 10s infinite;
-}
-.nav-container .nav-content .nav-search .ani-container .ani-area9 {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  animation: search9 10s infinite;
-}
-.nav-container .nav-content .nav-search .ani-container .ani-area10 {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  animation: search10 10s infinite;
-}
+
 .nav-container .nav-content .nav-search .ani-container .num-area {
   position: relative;
   width: 2rem;
@@ -392,17 +350,13 @@ main {
   position: relative;
 }
 .main-sec .main-slick .slick-img {
-  width: 100% !important;
-  height: 100% !important;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.main-sec .main-slick .slick-img img {
-  position: absolute;
   width: 100%;
   height: 100%;
+  position: absolute;
   object-fit: cover;
+}
+.main-sec .main-slick .slick-img img {
+  
 }
 
 .icon-container {
@@ -738,7 +692,7 @@ main {
 .today-deal .item-slick .item-box .img-info {
   margin-top: 9px;
 }
-.today-deal .item-slick .item-box .img span {
+.today-deal .item-slick .item-box .img .time {
   position: absolute;
   top: 12px;
   left: 12px;
@@ -1318,6 +1272,7 @@ main {
   display: flex;
   margin-bottom: 1.6rem;
   position: relative;
+  overflow: hidden;
 }
 .best-content .best-container .category-area .cate-list::after {
   content: "";
@@ -1328,19 +1283,52 @@ main {
   width: 15rem;
   height: 100%;
 }
-.best-content .best-container .category-area .cate-list li {
 
-    margin-right: 0.6rem;
+.best-content .best-container .category-area .cate-list li {
+   margin-right: 0.6rem;
+   padding: 0px;
+   flex-shrink: 0;
+   scroll-snap-align: start;
+   
+}
+.best-content .best-container .category-area .cate-list li label {
+  display: inline-block;
+    position: relative;
+    height: 3.2rem;
     border-radius: 1.6rem;
-    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    line-height: 0;
     color: rgb(47, 52, 56);
     background-color: rgb(247, 249, 250);
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    white-space: nowrap;
-    text-align: center;
+    
+    cursor: pointer;
 }
-.best-content .best-container .category-area .cate-list li:nth-of-type(1) {
+.best-content .best-container .category-area .cate-list li label::before {
+  content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.best-content .best-container .category-area .cate-list li label input {
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+.best-content .best-container .category-area .cate-list li label span {
+  font-size: 14px;
+    line-height: 18px;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: inherit;
+}
+input[type=checkbox] {
+  display: none;
+}
+.best-content .best-container .category-area .cate-list li:nth-of-type(1) label {
   color: rgb(255, 255, 255);
     background-color: rgb(53, 197, 240);
 }
