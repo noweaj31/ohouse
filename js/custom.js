@@ -64,7 +64,7 @@ $(document).ready(function () {
 
   $(".cate-list").slick({
     slidesToShow: 15,
-    slidesToScroll: 2,
+    slidesToScroll: 4,
     autoplay: false,
     autoplaySpeed: 2000,
     arrows: true,
