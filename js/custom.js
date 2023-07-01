@@ -4,8 +4,9 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    
+    draggable:false,
   });
+  
 
   $(".slick-img-").slick({
     slidesToShow: 1,
@@ -60,16 +61,39 @@ $(document).ready(function () {
     nextArrow: $("#aro____next"),
   });
 
-  // $(".cate-list").slick({
-  //   slidesToShow: 15,
-  //   slidesToScroll: 2,
-  //   autoplay: false,
-  //   autoplaySpeed: 2000,
-  //   arrows: true,
-  //   infinite: false,
-  //   arrows: true,
-  //   prevArrow: $("#aro_____prev"),
-  //   nextArrow: $("#aro_____next"),
-  // });
-  
+  $(".cate-list").slick({
+    slidesToShow: 15,
+    slidesToScroll: 2,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    arrows: true,
+    infinite: false,
+    arrows: true,
+    prevArrow: $("#aro_____prev"),
+    nextArrow: $("#aro_____next"),
+  });
+  const slickSlider = $(".slider-wrap");
+        const slideCount = slickSlider.slick("getSlick").slideCount;
+        const slidesToShow = slickSlider.slick("getSlick").options.slidesToShow;
+        $(".prev").hide();
+        $(".prev").click(function () {
+          $(".slider-wrap").slick("slickPrev");
+          const currentSlide = $(".slider-wrap").slick("slickCurrentSlide");
+          if (slideCount - slidesToShow !== currentSlide) {
+            $(".next").show();
+          }
+          if (currentSlide === 0) {
+            $(".prev").hide();
+          }
+        });
+
+        $(".next").click(function () {
+          $(".slider-wrap").slick("slickNext");
+          const currentSlide = $(".slider-wrap").slick("slickCurrentSlide");
+          if (slideCount - slidesToShow === currentSlide) {
+            $(".next").hide();
+          } else {
+            $(".prev").show();
+          }
+        });
 });

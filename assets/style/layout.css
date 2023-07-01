@@ -860,7 +860,7 @@ main {
   align-items: center;
   margin: 0 0 0 0;
   padding: 0;
-  height: 100%;
+  height: 40rem;
 }
 .today-deal .item-slick .item-container .more-btn {
   display: flex;
@@ -892,7 +892,8 @@ main {
 .today-deal .item-slick .arrow-slider {
   position: absolute;
   width: 100%;
-  top: 30%;
+  top: 40%;
+  
 }
 .today-deal .item-slick .arrow-slider i {
   font-size: 2.4rem;
@@ -965,16 +966,24 @@ main {
   display: flex;
   align-items: center;
 }
+
 .interior-pic .interior-slick .interior-img .img-area {
   margin: 0 2rem 0 0;
   width: calc((100% - 10rem) / 6);
   height: 100%;
   position: relative;
+  
+}
+.interior-pic .interior-slick .interior-img .img-area .img {
+  overflow: hidden;
+    position: relative;
+    border-radius: 4px;
 }
 .interior-pic .interior-slick .interior-img .img-area img {
   width: 100%;
   height: 100%;
-  border-radius: 0.4rem;
+  
+  
 }
 .interior-pic .interior-slick .interior-img .img-area .profile {
   display: flex;
@@ -1036,8 +1045,16 @@ main {
   justify-content: center;
   right: -2rem;
 }
+.interior-pic .interior-slick .interior-img .img-area:nth-of-type(11) {
+  height: 25rem;
+  position: relative;
+}
 .interior-pic .interior-slick .interior-img .img-area .more-btn {
   display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1201,6 +1218,11 @@ main {
     font-weight: 700;
     color: rgb(47, 52, 56);
     word-break: keep-all;
+}
+.exhibition-content .exh-area .exh-list:nth-of-type(6) {
+  height: 23rem;
+  display: flex;
+  justify-content: center;
 }
 .exhibition-content .exh-area .exh-list .more-btn {
   display: flex;
@@ -1378,8 +1400,11 @@ main {
   background-size: cover;
   width: 100%;
   height: 100%;
-  border-radius: 4px;
+  
   position: relative;
+}
+.best-content .best-container .item-box .img img {
+  border-radius: 4px;
 }
 
 .best-content .best-container .item-box .img-info {
@@ -1388,9 +1413,23 @@ main {
 
 .best-content .best-container .best-area .item-area .item-box .img a {
   position: absolute;
-  top: 0;
-  left: 1.2rem;
+  top: -4px;
+  left: 1rem;
   text-align: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  background-image: url(../../assets/image/best-icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.best-content .best-container .best-area .item-area .item-box .img a span {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
 }
 .best-content .best-container .item-box .img button {
   position: absolute;
