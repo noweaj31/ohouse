@@ -167,6 +167,7 @@
   margin-right: 4rem;
   height: 4rem;
   overflow: hidden;
+  background-color: #fff;
 }
 .nav-container .nav-content .nav-search .ani-container .ani-area1 {
   display: flex;
@@ -295,31 +296,41 @@ main {
 .main-sec {
   display: flex;
   padding: 0 6rem;
-  height: 491.16px;
   max-width: 1256px;
-  margin: 0 auto;
   margin-top: 3rem;
 }
 .main-sec .main-img {
-  width: 100%;
-  height: 100%;
-  flex: 1 1 84.7rem;
-  border-radius: 4px;
-  background-image: url(../../assets/image/165735732407572402.jpeg);
-  background-size: 100%;
-  background-position: center;
-  position: relative;
+ flex: 1 1 84.7rem;
+ 
 }
 .main-sec .main-img .img-area {
+  border-radius: 4px;
+  position: relative;
+  padding-top: 59.976387249114524%;
+  overflow: hidden;
+  font-size: 0;
+}
+.main-sec .main-img .img-area .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+.main-sec .main-img .img-area .img-box img {
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease 0s;
+}
+.main-sec .main-img .img-area .title-box {
   position: absolute;
   left: 0;
   bottom: 0;
   padding: 0 3rem 3rem 3rem;
 }
-.main-sec .main-img:hover {
-  background-size: 110%;
-  transition: 1s ease;
-}
+
 .main-sec .main-img .member {
   display: flex;
   align-items: center;
@@ -343,20 +354,24 @@ main {
   font-weight: 700;
 }
 .main-sec .main-slick {
-  display: flex;
   flex: 1 1 26.9rem;
   margin-left: 2rem;
-  border-radius: 4px;
+  overflow: hidden;
   position: relative;
 }
-.main-sec .main-slick .slick-img {
-  width: 100%;
+
+.main-sec .main-slick .slick-area {
   height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
   position: absolute;
-  object-fit: cover;
 }
-.main-sec .main-slick .slick-img img {
-  
+.main-sec .main-slick .slick-area .slick-box {
+  display: flex;
+  overflow: hidden;
+    border-radius: 4px;
+    height: 100%;
 }
 
 .icon-container {

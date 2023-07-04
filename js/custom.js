@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".slick-img").slick({
+  $(".slick-box").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -127,9 +127,9 @@ $(document).ready(function () {
           minutes = minutes < 10 ? "0" + minutes : minutes;
           seconds = seconds < 10 ? "0" + seconds : seconds;
 
-          document.getElementById("hours").textContent = hours;
-          document.getElementById("minutes").textContent = minutes;
-          document.getElementById("seconds").textContent = seconds;
+          document.getElementsByClassName("hours").textContent = hours;
+          document.getElementsByClassName("minutes").textContent = minutes;
+          document.getElementsByClassName("seconds").textContent = seconds;
         }, 1000);
 
         
