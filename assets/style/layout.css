@@ -297,7 +297,8 @@ main {
   display: flex;
   padding: 0 6rem;
   max-width: 1256px;
-  margin-top: 3rem;
+  
+  margin: 3rem auto 0;
 }
 .main-sec .main-img {
  flex: 1 1 84.7rem;
@@ -512,6 +513,7 @@ main {
   bottom: 0;
   width: 3.6rem;
   height: 3.6rem;
+  filter: drop-shadow(rgba(63, 71, 77, 0.25) 0px 2px 5px);
 }
 .space-li1 .img-list .img-container p {
   margin-top: 1rem;
@@ -685,30 +687,29 @@ main {
   color: rgb(53, 197, 240);
 }
 .today-deal .item-slick {
-  display: flex;
-  align-items: center;
-  width: 100%;
   position: relative;
+  
 }
 .today-deal .item-slick .item-container {
   display: flex;
   align-items: center;
   position: relative;
-  width: 100%;
+  overflow: hidden;
 }
 .today-deal .item-slick .item-container .item-area {
-  width: calc((100% - 60px) / 4);
+  margin: 0px 20px 0px 0px;
+    padding: 0px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    width: calc((100% - 60px) / 4);
 }
 .today-deal .item-slick .item-container .item-box {
-  margin-right: 2rem;
-}
-.today-deal .item-slick .item-container .item-box:nth-of-type(4) {
-  margin-right: 0;
+  
 }
 
+
 .today-deal .item-slick .item-box .img {
-  background-position: center;
-  background-size: cover;
+  
   width: 100%;
   height: 100%;
   border-radius: 4px;
@@ -837,9 +838,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 0 0;
+  margin: 0 2rem 0 0;
   padding: 0;
   height: 40rem;
+  
 }
 .today-deal .item-slick .item-container .more-btn {
   display: flex;
@@ -943,50 +945,85 @@ main {
 }
 .interior-pic .interior-slick .interior-img {
   display: flex;
-  align-items: center;
+  margin: 0px;
+
+  padding: 0px;
+  overflow: hidden;
+  
 }
 
 .interior-pic .interior-slick .interior-img .img-area {
-  margin: 0 2rem 0 0;
-  width: calc((100% - 10rem) / 6);
-  height: 100%;
-  position: relative;
+  margin: 0px 20px 0px 0px;
+    padding: 0px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    width: calc((100% - 100px) / 6) !important;
+    
+  
+    
   
 }
-.interior-pic .interior-slick .interior-img .img-area .img {
-  overflow: hidden;
-    position: relative;
-    border-radius: 4px;
+.interior-pic .interior-slick .interior-img .img-area .img-box {
+  position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 0px;
+    flex-flow: column;
 }
+.interior-pic .interior-slick .interior-img .img-area .img-box .img-item {
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+
+}
+.interior-pic .interior-slick .interior-img .img-area .img-box .img-item::before {
+  content: "";
+    display: block;
+    padding-top: 133.333%;
+}
+
 .interior-pic .interior-slick .interior-img .img-area img {
   width: 100%;
-  height: 100%;
-  
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
   
 }
-.interior-pic .interior-slick .interior-img .img-area .profile {
+
+
+
+.interior-pic .interior-slick .interior-img .img-area .pro-area {
   display: flex;
-  justify-content: space-between;
   position: absolute;
-  bottom: 0;
-  padding: 0.8rem;
-  width: 100%;
+    padding: 8px;
+    font-size: 0px;
+    z-index: 1;
+    left: 0px;
+    bottom: 0px;
 }
-.interior-pic .interior-slick .interior-img .img-area .profile .pro-area {
-  display: flex;
-  align-items: center;
-}
-.interior-pic .interior-slick .interior-img .img-area .profile .pro-area img {
+.interior-pic .interior-slick .interior-img .img-area .pro-area img {
   width: 2.4rem;
   height: 2.4rem;
   margin-right: 0.4rem;
   border-radius: 50%;
 }
-.interior-pic .interior-slick .interior-img .img-area .profile .pro-area span {
+.interior-pic .interior-slick .interior-img .img-area .pro-area span {
   font-size: 1.2rem;
   line-height: 2rem;
   font-weight: 700;
   color: rgb(255, 255, 255);
+}
+.interior-pic .interior-slick .interior-img .img-area .img-btn {
+  position: absolute;
+  padding: 8px;
+  font-size: 0px;
+  z-index: 1;
+  right: 0px;
+  bottom: 0px;
+  width: 3.6rem;
+  height: 3.6rem;
 }
 .interior-pic .interior-slick .arrow-slider {
   position: absolute;
