@@ -387,10 +387,12 @@ main {
 }
 .icon-container .icon-area .icon {
   text-align: center;
+  width: 100%;
 }
 .icon-container .icon-area .icon img {
   max-width: 8.8rem;
   margin-bottom: 8px;
+  max-width: 7.8rem;
 }
 .icon-container .icon-area .icon span {
   font-size: 1.6rem;
@@ -398,6 +400,12 @@ main {
   line-height: 2rem;
 }
 .main-sec .main-slick- {
+  display: none;
+}
+hr {
+  display: none;
+}
+.arrow-btn {
   display: none;
 }
 @media screen and (max-width: 767px) {
@@ -410,9 +418,7 @@ main {
     height: 100%;
     
   }
-  .main-sec .main-slick {
-    margin-left: 0;
-  }
+  
   .main-sec .main-slick {
     display: none;
   }
@@ -449,13 +455,24 @@ main {
     max-width: 7.8rem;
   
   }
-  .icon-container::after {
-    content: '';
+  
+  hr {
     display: block;
-    bottom: 0;
-    width: 100%;
-    height: 1rem;
+    margin: 0px;
+    padding: 0px;
+    height: 10px;
+    border: none;
     background-color: rgb(247, 249, 250);
+  }
+  .arrow-btn {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 1;
+    color: rgb(47, 52, 56);
+    cursor: pointer;
+  }
+  .see-more {
+    display: none;
   }
 }
 /* space-img */
@@ -528,6 +545,12 @@ main {
   font-weight: 700;
   margin-right: 5px;
 }
+hr {
+  display: none;
+}
+.arrow-btn {
+  display: none;
+}
 @media screen and (max-width: 767px) {
   .space-li1 .space-title {
     margin-top: 0;
@@ -538,14 +561,25 @@ main {
     gap: 1.6rem;
     margin-bottom: 2rem;
   }
-  .space-li1::after {
-    content: '';
+  hr {
     display: block;
-    bottom: 0;
-    width: 100%;
-    height: 1rem;
+    margin: 0px;
+    padding: 0px;
+    height: 10px;
+    border: none;
     background-color: rgb(247, 249, 250);
   }
+  .arrow-btn {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 1;
+    color: rgb(47, 52, 56);
+    cursor: pointer;
+  }
+  .see-more {
+    display: none;
+  }
+  
   .space-li1 {
     padding: 0 1.6rem;
     
@@ -649,6 +683,9 @@ main {
   line-height: 18px;
   color: rgb(47, 52, 56);
 }
+hr {
+  display: none;
+}
 @media screen and (max-width: 767px) {
   .category {
     padding: 0 1.6rem 2rem;
@@ -658,6 +695,14 @@ main {
   }
   .category .category-list .arrow-slider {
     display: none;
+  }
+  hr {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 10px;
+    border: none;
+    background-color: rgb(247, 249, 250);
   }
 }
 /* today-deal */
@@ -907,6 +952,64 @@ main {
   justify-content: center;
   right: -2rem;
 }
+.more-btn-area-box {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .today-deal {
+    padding: 0 1.6rem 2rem;
+    margin-top: 0;
+  }
+  .today-deal .space-title {
+    margin-top: 0;
+  }
+  .today-deal .item-slick .item-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .today-deal .item-slick .item-container .item-area {
+    width: 100%;
+    padding: 1.6rem 0;
+    border-bottom: 1px solid rgb(247, 249, 250); ;
+  }
+  .today-deal .item-slick .item-container .item-area:nth-of-type(n+5) {
+    display: none;
+  }
+  .today-deal .item-slick .item-container .item-area:nth-of-type(1) {
+    padding-top: 0;
+  }
+  .today-deal .item-slick .item-container .item-area .item-box {
+    display: flex;
+    align-items: center;
+  }
+  .today-deal .item-slick .item-container .item-area .item-box .img {
+    flex: 0 0 48%;
+    width: 48%;
+  }
+  .today-deal .item-slick .item-container .item-area .item-box .img-info {
+    margin-left: 1.2rem;
+  }
+  .arrow-slider {
+    display: none;
+  }
+  .today-deal .item-slick .item-container .more-btn-area {
+    display: none;
+  }
+  .today-deal button {
+    display: inline-block;
+
+    margin: 2rem 0 0;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    height: 4.4rem;
+    border-radius: 4px;
+    padding: 0px 1.6rem;
+    font-weight: 400;
+    color: rgb(47, 52, 56);
+    border: 1px solid rgb(218, 221, 224);
+    width: 100%;
+  }
+}
 /* interior-pic */
 .interior-pic {
   max-width: 1256px;
@@ -946,7 +1049,6 @@ main {
 .interior-pic .interior-slick .interior-img {
   display: flex;
   margin: 0px;
-
   padding: 0px;
   overflow: hidden;
   
@@ -994,7 +1096,7 @@ main {
 
 
 
-.interior-pic .interior-slick .interior-img .img-area .pro-area {
+.interior-pic .interior-slick .interior-img .img-area .img-box .img-item .pro-area {
   display: flex;
   position: absolute;
     padding: 8px;
@@ -1002,28 +1104,52 @@ main {
     z-index: 1;
     left: 0px;
     bottom: 0px;
+    align-items: center;
 }
-.interior-pic .interior-slick .interior-img .img-area .pro-area img {
-  width: 2.4rem;
-  height: 2.4rem;
-  margin-right: 0.4rem;
-  border-radius: 50%;
+.interior-pic .interior-slick .interior-img .img-area .pro-area .pro-img {
+  position: relative;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 4px;
 }
+.interior-pic .interior-slick .interior-img .img-area .pro-area .pro-img img {
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .interior-pic .interior-slick .interior-img .img-area .pro-area span {
+  overflow: hidden;
+  display: inline-block;
+  max-width: 100px;
   font-size: 1.2rem;
   line-height: 2rem;
   font-weight: 700;
   color: rgb(255, 255, 255);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.interior-pic .interior-slick .interior-img .img-area .btn-area {
+  display: inline-block;
+    font-size: 2.4rem;
+    line-height: 1;
+    
 }
 .interior-pic .interior-slick .interior-img .img-area .img-btn {
   position: absolute;
-  padding: 8px;
   font-size: 0px;
   z-index: 1;
-  right: 0px;
-  bottom: 0px;
-  width: 3.6rem;
-  height: 3.6rem;
+  right: 8px;
+  bottom: 8px;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 .interior-pic .interior-slick .arrow-slider {
   position: absolute;
@@ -1061,19 +1187,15 @@ main {
   justify-content: center;
   right: -2rem;
 }
-.interior-pic .interior-slick .interior-img .img-area:nth-of-type(11) {
-  height: 25rem;
-  position: relative;
-}
+
 .interior-pic .interior-slick .interior-img .img-area .more-btn {
   display: flex;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  
   color: rgb(47, 52, 56);
   font-weight: 500;
   padding: 0.6rem 1.6rem;
