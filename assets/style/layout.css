@@ -947,6 +947,7 @@ hr {
   .today-deal {
     padding: 0 1.6rem 2rem;
     margin-top: 0;
+    margin-bottom: 0;
   }
   .today-deal .space-title {
     margin-top: 0;
@@ -987,6 +988,7 @@ hr {
     .img-info
     .img-int {
     font-size: 1.4rem;
+    
   }
   
   .arrow-slider {
@@ -1058,7 +1060,7 @@ hr {
   padding: 0px;
   flex-shrink: 0;
   scroll-snap-align: start;
-  width: calc((100% - 100px) / 6) !important;
+  width: calc((100% - 100px) / 6) ;
 }
 .interior-pic .interior-slick .interior-img .img-area .img-box {
   position: relative;
@@ -1220,6 +1222,26 @@ hr {
   font-size: 1.4rem;
   line-height: 2rem;
 }
+@media screen and (max-width: 767px) {
+  .interior-pic {
+    padding: 0 1.6rem 2rem;
+    margin: 0;
+  }
+  .interior-pic .space-title {
+    margin-top: 0;
+  }
+  .interior-pic .space-title .arrow-btn {
+    display: block;
+  }
+  .interior-pic .interior-slick .interior-img .img-area {
+    margin-right: 1.2rem;
+    width: calc((100% - 24px) / 2.4);
+  }
+  .interior-pic .interior-slick .interior-img .img-area .img-box {
+    width: 100%;
+  }
+  
+}
 /* review-content */
 .review-content {
   max-width: 1256px;
@@ -1287,6 +1309,65 @@ hr {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+.review-content .more-btn-area-box {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .review-content {
+    margin: 0;
+    padding: 0 1.6rem 2rem;
+  }
+  .review-content .space-title {
+    margin-top: 0;
+  }
+  .review-content .review-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.6rem;
+  }
+  .review-content .review-area .review-list .img-area {
+    flex: 0 0 12rem;
+  }
+  .review-content .review-area .review-list .img-area::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  .review-content .review-area .review-list .img-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: transform 0.2s ease 0s;
+  }
+  .review-content .review-area .review-list {
+    display: flex;
+    width: 100%;
+  }
+  .review-content .review-area .review-list .img-int {
+    margin-left: 1.2rem;
+  }
+  .review-content .review-area .review-list .img-int .list-title {
+    margin-top: 0;
+  }
+  .review-content button {
+    display: inline-block;
+
+    margin: 2rem 0 0;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    height: 4.4rem;
+    border-radius: 4px;
+    padding: 0px 1.6rem;
+    font-weight: 400;
+    color: rgb(47, 52, 56);
+    border: 1px solid rgb(218, 221, 224);
+    width: 100%;
+  }
 }
 /* exhibition-content */
 .exhibition-content {
@@ -1425,6 +1506,67 @@ hr {
   align-items: center;
   justify-content: center;
   right: -2rem;
+}
+.exhibition-content .more-btn-area-box {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .exhibition-content {
+    padding: 0 1.6rem 2rem;
+    margin: 0;
+  }
+  .exhibition-content .space-title {
+    margin-top: 0;
+  }
+  .exhibition-content .exh-area {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .exhibition-content .exh-area .exh-list {
+    display: flex;
+    width: 100%;
+    margin-right: 0;
+  }
+  .exhibition-content .exh-area .exh-list:nth-of-type(6) {
+    display: none;
+  }
+  .exhibition-content .exh-area .exh-list .img-int {
+    margin-left: 1.2rem;
+  }
+  .exhibition-content .exh-area .exh-list .img-int .sub-title {
+    margin-top: 0;
+  }
+  .exhibition-content .exh-area .exh-list .img-area {
+    flex: 0 0 12rem;
+  }
+  .exhibition-content .exh-area .exh-list .img-area::before {
+    content: '';
+    display: block;
+    padding-top: 66.6667%;
+  }
+  .exhibition-content .exh-area .exh-list .img-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: transform 0.2s ease 0s;
+  }
+  .exhibition-content button {
+    display: inline-block;
+
+    margin: 2rem 0 0;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    height: 4.4rem;
+    border-radius: 4px;
+    padding: 0px 1.6rem;
+    font-weight: 400;
+    color: rgb(47, 52, 56);
+    border: 1px solid rgb(218, 221, 224);
+    width: 100%;
+  }
 }
 /* best-content */
 .best-content {
@@ -1687,6 +1829,15 @@ input[type="checkbox"] {
   font-weight: 600;
   border-radius: 0.3rem;
   color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .best-content {
+    padding: 0 1.6rem 2rem;
+    margin: 0;
+  }
+  .best-content .space-title {
+    margin-top: 0;
+  }
 }
 /* footer */
 footer {
