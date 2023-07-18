@@ -1769,7 +1769,9 @@ input[type="checkbox"] {
   
 }
 
-
+.best-content .best-container .best-area .item-area .item-box .img {
+  position: relative;
+}
 
 .best-content .best-container .best-area .item-area .item-box .img a {
   position: absolute;
