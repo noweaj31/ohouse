@@ -393,8 +393,9 @@ main {
 }
 .icon-container .icon-area .icon {
   text-align: center;
-  width: 100%;
+  
 }
+
 .icon-container .icon-area .icon img {
   max-width: 8.8rem;
   margin-bottom: 8px;
