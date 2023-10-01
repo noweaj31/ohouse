@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+
 /* join membership page */
 
 .join-container {
@@ -13,11 +15,9 @@
   width: 8.8rem;
   height: 3.1rem;
   text-align: left;
-  
 }
 .join-container .join-content {
   width: 100%;
-  
 }
 
 .join-container .join-wrap {
@@ -44,13 +44,11 @@
 }
 .join-container .join-wrap .join-area .sns-area .icon-area {
   display: flex;
-  
 }
 .join-container .join-wrap .join-area .sns-area .icon-area a {
   margin: 0 1rem;
 }
 .join-container .join-wrap .email-area {
-  
   padding: 3rem 0;
 }
 .join-container .join-wrap .email-area label {
@@ -67,7 +65,6 @@
   width: 17rem;
   height: 4rem;
   padding: 0 1.5rem;
-  
 }
 .join-container .join-wrap .email-area .email-text input:hover {
   background-color: #fafafa;
@@ -75,7 +72,6 @@
 .join-container .join-wrap .email-area .email-text span {
   font-size: 1.5rem;
   color: #dbdbdb;
-  
 }
 .join-container .join-wrap .email-area .email-text .select {
   display: flex;
@@ -87,10 +83,8 @@
   transform: translateY(-50%);
   right: 10px;
   pointer-events: none;
-  
 }
 .join-container .join-wrap .email-area .email-text select {
-  
   appearance: none;
   width: 17rem;
   height: 4rem;
@@ -169,7 +163,7 @@
   color: #fff;
   padding: 11px 10px;
   border-radius: 4px;
-  
+
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 3rem;
@@ -195,12 +189,11 @@
   margin-bottom: 1.2rem;
 }
 .join-container .join-wrap .agreement-area .check_input-area {
-  
   width: 100%;
   padding: 1.8rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid #EAEDEF;
+  border: 1px solid #eaedef;
   margin-bottom: 30px;
 }
 .join-container .join-wrap .agreement-area .check_input-area label {
@@ -223,66 +216,105 @@
 .check_input:checked {
   background-color: rgb(53, 197, 240);
   border: rgb(53, 197, 240);
-  
 }
 .check_input:checked::after {
-  content:"\f00c";
-  font-family:"Font Awesome 5 free";
-  font-weight:900;
-  color:#fff;
-  background-color:rgb(53, 197, 240);
+  content: "\f00c";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  color: #fff;
+  background-color: rgb(53, 197, 240);
   position: absolute;
-  font-size:13px;
+  font-size: 13px;
   top: 17%;
   left: 50%;
   transform: translate(-50%);
 }
 
-
-
 .join-container .join-wrap .agreement-area .check_input-area label .the-entire {
   font-size: 1.4rem;
   font-weight: 700;
 }
-.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(1) p:nth-of-type(2) {
+.join-container
+  .join-wrap
+  .agreement-area
+  .check_input-area
+  label:nth-of-type(1)
+  p:nth-of-type(2) {
   font-size: 12px;
   line-height: 20px;
   font-weight: 400;
-  color: #828C94;
+  color: #828c94;
 }
-.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(1) {
+.join-container
+  .join-wrap
+  .agreement-area
+  .check_input-area
+  label:nth-of-type(1) {
   padding-bottom: 1.8rem;
-  border-bottom: 1px solid #EAEDEF;;
+  border-bottom: 1px solid #eaedef;
 }
-.join-container .join-wrap .agreement-area .check_input-area label .check_input-title {
+.join-container
+  .join-wrap
+  .agreement-area
+  .check_input-area
+  label
+  .check_input-title {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.3px;
-  color: #2F3438;
+  color: #2f3438;
 }
-.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(2) span,
-.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(3) span,
-.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(4) span {
+.join-container
+  .join-wrap
+  .agreement-area
+  .check_input-area
+  label:nth-of-type(2)
+  span,
+.join-container
+  .join-wrap
+  .agreement-area
+  .check_input-area
+  label:nth-of-type(3)
+  span,
+.join-container
+  .join-wrap
+  .agreement-area
+  .check_input-area
+  label:nth-of-type(4)
+  span {
   padding-left: 2px;
   font-size: 12px;
   line-height: 20px;
-  color: #009FCE;
+  color: #009fce;
 }
-.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(5) span,
-.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(6) span {
+.join-container
+  .join-wrap
+  .agreement-area
+  .check_input-area
+  label:nth-of-type(5)
+  span,
+.join-container
+  .join-wrap
+  .agreement-area
+  .check_input-area
+  label:nth-of-type(6)
+  span {
   padding-left: 2px;
   font-size: 12px;
   line-height: 20px;
-  color: #828C94;
+  color: #828c94;
 }
 .join-container .join-wrap .agreement-area .check_input-area label i {
   position: absolute;
   right: 1px;
   top: 1px;
 }
-.join-container .join-wrap .agreement-area .check_input-area label:nth-of-type(6) {
+.join-container
+  .join-wrap
+  .agreement-area
+  .check_input-area
+  label:nth-of-type(6) {
   margin-bottom: 0;
-  
 }
 
 .header-container {
@@ -299,7 +331,6 @@
 .reset-pw-area p {
   font-size: 1.3rem;
   margin-bottom: 1.2rem;
-  
 }
 .reset-pw-area .input-area {
   border: 1px solid rgb(219, 219, 219);
@@ -324,7 +355,6 @@
   height: 3.1rem;
   border-radius: 4px;
   white-space: pre;
-  
 }
 .reset-pw-area .e-mail-btn {
   background-color: rgb(53, 197, 240);
@@ -355,7 +385,6 @@
   font-weight: bold;
 }
 
-
 @media screen and (max-width: 767px) {
   .join-container {
     margin: 0 15px;
@@ -376,12 +405,11 @@
   }
   .join-container .join-wrap .email-area .email-text span {
     padding: 4px;
-
   }
   .join-container .join-wrap .email-area button {
     width: 100%;
   }
- .join-container .join-wrap .password-area .password-confirm-area input  {
+  .join-container .join-wrap .password-area .password-confirm-area input {
     width: 100%;
   }
   .join-container .join-wrap .password-area .pw-area-input input {
@@ -391,4 +419,3 @@
     width: 100%;
   }
 }
-
