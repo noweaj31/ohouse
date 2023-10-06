@@ -9,24 +9,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/jquery-3.5.1.min.js"></script>
-
-    <!-- slick.js -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <!-- sliding jquery -->
-    <script src="./js/custom.js"></script>
+    <script src="./js/slick/slick.min.js"></script>
+    <script src="./js/jquery.scrollTo.min.js"></script>
+    <link rel="stylesheet" href="./js/slick/slick.css" />
+    <link rel="stylesheet" href="./js/slick/slick-theme.css" />
     <link rel="stylesheet" href="./assets/style/reset.css" />
     <link rel="stylesheet" href="./assets/style/font.css" />
     <link rel="stylesheet" href="./assets/style/layout.css" />
@@ -52,21 +38,23 @@
         </div>
         <div class="main-slick">
           <div class="slick-area">
-            <div class="slick-box">
-              <img src="./assets/image/slick1.png" alt="" />
-              <img src="./assets/image/slick2.png" alt="" />
-              <img src="./assets/image/slick3.jpeg" alt="" />
-              <img src="./assets/image/slick4.jpeg" alt="" />
-              <img src="./assets/image/slick-5.jpg" alt="" />
-              <img src="./assets/image/slick6.jpeg" alt="" />
-              <img src="./assets/image/slick7.jpg" alt="" />
-              <img src="./assets/image/slick8.png" alt="" />
-              <img src="./assets/image/slick-9.jpeg" alt="" />
-              <img src="./assets/image/slick10.jpg" alt="" />
-              <img src="./assets/image/slick11.png" alt="" />
-              <img src="./assets/image/slick-12.png" alt="" />
-              <img src="./assets/image/slick-13.png" alt="" />
-              <img src="./assets/image/slick14.png" alt="" />
+            <div class="slick-wrap">
+              <div class="slick-box">
+                <img src="./assets/image/slick1.png" alt="" />
+                <img src="./assets/image/slick2.png" alt="" />
+                <img src="./assets/image/slick3.jpeg" alt="" />
+                <img src="./assets/image/slick4.jpeg" alt="" />
+                <img src="./assets/image/slick-5.jpg" alt="" />
+                <img src="./assets/image/slick6.jpeg" alt="" />
+                <img src="./assets/image/slick7.jpg" alt="" />
+                <img src="./assets/image/slick8.png" alt="" />
+                <img src="./assets/image/slick-9.jpeg" alt="" />
+                <img src="./assets/image/slick10.jpg" alt="" />
+                <img src="./assets/image/slick11.png" alt="" />
+                <img src="./assets/image/slick-12.png" alt="" />
+                <img src="./assets/image/slick-13.png" alt="" />
+                <img src="./assets/image/slick14.png" alt="" />
+              </div>
             </div>
             <div class="arrow-slider">
               <span class="prev" id="aro_prev"
@@ -76,6 +64,7 @@
                 ><i class="fa-solid fa-chevron-right"></i
               ></span>
             </div>
+            <span></span>
           </div>
         </div>
         <div class="main-slick-">
@@ -1174,62 +1163,78 @@
           <p class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></p>
         </div>
         <div class="exhibition-slick">
-          <ul class="exh-area">
-            <li class="exh-list">
-              <div class="img-area">
-                <img src="./assets/image/exh-1.png" alt="" />
-              </div>
-              <div class="img-int">
-                <p class="sub-title">여름가전 여름이불 매일특가 모음집</p>
-                <p class="title">오!썸머 빅세일</p>
-              </div>
-            </li>
-            <li class="exh-list">
-              <div class="img-area">
-                <img src="./assets/image/exh-2.png" alt="" />
-              </div>
-              <div class="img-int">
-                <p class="sub-title">국내외 인기브랜드 200개 특가</p>
-                <p class="title">2023 제 4회 키친디자인페어</p>
-              </div>
-            </li>
-            <li class="exh-list">
-              <div class="img-area">
-                <img src="./assets/image/exh-3.avif" alt="" />
-              </div>
-              <div class="img-int">
-                <p class="sub-title">오늘의집 Exclusive Label</p>
-                <p class="title">O!CRAFT 통합브랜드관</p>
-              </div>
-            </li>
-            <li class="exh-list">
-              <div class="img-area">
-                <img src="./assets/image/exh-4.avif" alt="" />
-              </div>
-              <div class="img-int">
-                <p class="sub-title">상반기 베스트 상품만 모아 단독특가!</p>
-                <p class="title">가전 릴레이 SALE ~66%</p>
-              </div>
-            </li>
-            <li class="exh-list">
-              <div class="img-area">
-                <img src="./assets/image/exh-5.png" alt="" />
-              </div>
-              <div class="img-int">
-                <p class="sub-title">쿨썸머템부터 365일 필수템까지!</p>
-                <p class="title">PET SUMMER BIG SALE ~65%</p>
-              </div>
-            </li>
-            <li class="exh-list">
-              <a class="more-btn">
-                <div class="arrow">
-                  <i class="fa-solid fa-arrow-right"></i>
+          <div class="exh-wrap">
+            <div class="exh-box">
+              <div class="exh-area">
+                <div class="exh-list">
+                  <div class="list-wrap">
+                    <div class="img-area">
+                      <img src="./assets/image/exh-1.png" alt="" />
+                    </div>
+                    <div class="img-int">
+                      <p class="sub-title">여름가전 여름이불 매일특가 모음집</p>
+                      <p class="title">오!썸머 빅세일</p>
+                    </div>
+                  </div>
                 </div>
-                <span>더보기</span>
-              </a>
-            </li>
-            <button class=".more-btn-area-box">기획전 더보기</button>
-          </ul>
+                <div class="exh-list">
+                  <div class="list-wrap">
+                    <div class="img-area">
+                      <img src="./assets/image/exh-2.png" alt="" />
+                    </div>
+                    <div class="img-int">
+                      <p class="sub-title">국내외 인기브랜드 200개 특가</p>
+                      <p class="title">2023 제 4회 키친디자인페어</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="exh-list">
+                  <div class="list-wrap">
+                    <div class="img-area">
+                      <img src="./assets/image/exh-3.avif" alt="" />
+                    </div>
+                    <div class="img-int">
+                      <p class="sub-title">오늘의집 Exclusive Label</p>
+                      <p class="title">O!CRAFT 통합브랜드관</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="exh-list">
+                  <div class="list-wrap">
+                    <div class="img-area">
+                      <img src="./assets/image/exh-4.avif" alt="" />
+                    </div>
+                    <div class="img-int">
+                      <p class="sub-title">
+                        상반기 베스트 상품만 모아 단독특가!
+                      </p>
+                      <p class="title">가전 릴레이 SALE ~66%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="exh-list">
+                  <div>
+                    <div class="img-area">
+                      <img src="./assets/image/exh-5.png" alt="" />
+                    </div>
+                    <div class="img-int">
+                      <p class="sub-title">쿨썸머템부터 365일 필수템까지!</p>
+                      <p class="title">PET SUMMER BIG SALE ~65%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="exh-list">
+                  <a class="more-btn">
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <span>더보기</span>
+                  </a>
+                </div>
+                <button class=".more-btn-area-box">기획전 더보기</button>
+              </div>
+            </div>
+          </div>
           <div class="arrow-slider">
             <span class="prev" id="aro_prev"
               ><i class="fa-solid fa-chevron-left"></i
@@ -1330,14 +1335,12 @@
                 >
               </li>
             </ul>
-            <div class="arrow-slider">
-              <span class="prev" id="aro_prev"
-                ><i class="fa-solid fa-chevron-left"></i
-              ></span>
-              <span class="next" id="aro_next"
-                ><i class="fa-solid fa-chevron-right"></i
-              ></span>
-            </div>
+            <span class="prev" id="aro_prev"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="next" id="aro_next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
           </div>
           <div class="best-area">
             <div class="item-area">
@@ -1527,6 +1530,8 @@
     </main>
     <footer></footer>
   </body>
+  <script src="./js/carousel.js"></script>
+  <script src="./js/tab.js"></script>
   <script>
     Promise.all([
       fetch("./layout/footer.html").then((response) => response.text()),
