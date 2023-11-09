@@ -8,7 +8,9 @@
 .header-container .header-area1 a:nth-of-type(2) {
   color: #35c5f0;
 }
-
+.aside-gnb {
+  display: none;
+}
 .nav-container .nav-content .nav-menu div:nth-of-type(1) {
   color: rgb(47, 52, 56);
 }
@@ -46,6 +48,8 @@
 /* mobile aside gnb */
 @media screen and (max-width: 767px) {
   .aside-gnb {
+    font-family: "noto-sans-kr";
+    display: block;
     position: fixed;
     overflow-y: auto;
     top: 0px;
@@ -165,19 +169,36 @@
     border-radius: 4px;
     color: rgb(47, 52, 56);
   }
+
   .aside-gnb .gnb-wrap .gnb-menu-list .menu-item button div {
     display: flex;
     align-items: center;
   }
   .aside-gnb .gnb-wrap .gnb-menu-list .menu-item button div i {
     margin-right: 0.8rem;
-    width: 2.4rem;
-    height: 2.4rem;
   }
   .aside-gnb .gnb-wrap .gnb-menu-list .menu-item button div span {
     font-size: 1.6rem;
     font-weight: 600;
-    margin-left: 0.8rem;
+  }
+  .aside-gnb .gnb-wrap .gnb-menu-list .menu-item .menu-item-content li {
+    margin: 0.4rem 0 0;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: rgb(47, 52, 56);
+  }
+  .aside-gnb .gnb-wrap .gnb-menu-list .menu-item .menu-item-content li a {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    padding: 0 1.4rem 0 4.2rem;
+    color: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
   }
   .aside-gnb .gnb-wrap .gnb-menu-list .menu-item button .fa-chevron-down {
     width: 1.2rem;
@@ -193,9 +214,21 @@
     font-size: 1.4rem;
     color: rgb(47, 52, 56);
   }
+  .aside-gnb .gnb-wrap .gnb-bottom-menu li:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+  }
+  .aside-gnb .gnb-wrap .gnb-bottom-menu li a div {
+    display: flex;
+    align-items: center;
+  }
+  .aside-gnb .gnb-wrap .gnb-bottom-menu li a div img {
+    margin-left: 0.15rem;
+  }
   .aside-gnb .gnb-wrap .gnb-bottom-menu li a {
     overflow: hidden;
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 4rem;
     padding: 0 1.4rem;
@@ -207,6 +240,24 @@
   }
   .aside-gnb .gnb-wrap .application-menu {
     display: flex;
+    align-items: center;
+    margin-top: 2.6rem;
+  }
+  .aside-gnb .gnb-wrap .application-menu li {
+    display: inline-block;
+    padding: 0.6rem;
+    border-radius: 4px;
+    line-height: 1.8rem;
+  }
+  .aside-gnb .gnb-wrap .application-menu li + li {
+    margin: 0 0 0 0.7rem;
+  }
+  .aside-gnb .gnb-wrap .application-menu li a {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    outline: none;
+    vertical-align: middle;
+    white-space: nowrap;
   }
 }
 
