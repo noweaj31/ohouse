@@ -33,7 +33,6 @@
               <button><i class="fa-solid fa-magnifying-glass"></i></button>
               <input type="text" placeholder="쇼핑 검색" />
             </div>
-
             <button class="cart-area" aria-label="장바구니 페이지 버튼">
               <i class="fa-solid fa-cart-shopping"></i>
             </button>
@@ -89,7 +88,7 @@
         </div>
       </nav>
     </header>
-    <aside>
+    <aside class="side-menu-wrap">
       <div class="aside-gnb">
         <div class="gnb-wrap">
           <div class="gnb-head">
@@ -204,6 +203,26 @@
             <li><a href="">판매자 신청</a></li>
           </ul>
         </div>
+      </div>
+    </aside>
+    <aside class="search-box">
+      <div class="search-box-wrap">
+        <h1>검색창</h1>
+        <div class="header-area2">
+          <div class="input-area">
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="text" placeholder="쇼핑 검색" />
+          </div>
+          <button class="close-btn">취소</button>
+        </div>
+        <section>
+          <header class="search-box-header">
+            <h2>최근 검색어</h2>
+            <button type="button">전체 삭제</button>
+          </header>
+        </section>
       </div>
     </aside>
     <div class="selling-content">
@@ -401,4 +420,5 @@
     </div>
   </body>
   <script src="../../js/accordion.js"></script>
+  <script src="../../js/seach.js"></script>
 </html>
