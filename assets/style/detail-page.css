@@ -146,6 +146,7 @@
     padding: 2rem 0;
     border-bottom: 1px solid rgb(234, 237, 239);
   }
+
   .aside-gnb .gnb-wrap .gnb-menu-list .menu-item {
     margin: 0.4rem 0 0;
     font-size: 1.6rem;
@@ -180,7 +181,14 @@
   .aside-gnb .gnb-wrap .gnb-menu-list .menu-item button div span {
     font-size: 1.6rem;
     font-weight: 600;
+    transition: 200ms ease-in-out;
   }
+  .aside-gnb .gnb-wrap .gnb-menu-list .menu-item .menu-item-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 200ms ease-in-out;
+  }
+
   .aside-gnb .gnb-wrap .gnb-menu-list .menu-item .menu-item-content li {
     margin: 0.4rem 0 0;
     font-size: 1.4rem;
@@ -204,6 +212,7 @@
     width: 1.2rem;
     height: 1.2rem;
     font-size: 1.2rem;
+    transition: 200ms ease-in-out;
   }
   .aside-gnb .gnb-wrap .gnb-bottom-menu {
     padding: 2rem 0;
