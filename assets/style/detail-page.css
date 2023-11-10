@@ -51,7 +51,6 @@
     font-family: "noto-sans-kr";
     display: block;
     position: fixed;
-    overflow-y: auto;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -60,9 +59,13 @@
     z-index: 1300;
     background-color: rgba(33, 38, 41, 0.5);
   }
+  .aside-gnb .gnb-wrap::-webkit-scrollbar {
+    display: none;
+  }
   .aside-gnb .gnb-wrap {
     position: absolute;
     overflow-y: auto;
+    overscroll-behavior: contain;
     top: 0px;
     bottom: 0px;
     left: 0px;
