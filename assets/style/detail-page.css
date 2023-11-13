@@ -50,6 +50,9 @@
     color: rgb(47, 52, 56);
   }
 }
+
+/* nav */
+
 /* aside gnb */
 @media screen and (max-width: 767px) {
   .side-menu-wrap {
