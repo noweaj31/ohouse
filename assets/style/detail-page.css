@@ -412,14 +412,16 @@
 .selling-content .selling-wrap {
   margin-right: auto;
   margin-left: auto;
-  width: 1136px;
+  width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   min-height: 1px;
+  padding: 0 6rem;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .selling-content .selling-wrap {
-    width: calc(100% - 120px);
+    width: calc(100% - 80px);
+    padding: 0;
   }
 }
 .selling-content .selling-wrap .category-wrap {
@@ -509,6 +511,7 @@
   font-size: 2.2rem;
   line-height: 3.3rem;
   min-height: 4.3rem;
+
   font-weight: 400;
   color: #000;
 }
@@ -873,4 +876,9 @@
 }
 .brand-btn .brand-home img {
   margin-left: 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  .selling-content .selling-wrap {
+    width: calc(100% - 80px);
+  }
 }
