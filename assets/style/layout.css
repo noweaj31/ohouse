@@ -199,6 +199,7 @@ header {
 .nav-container .nav-content .nav-menu div:hover {
   color: #35c5f0;
 }
+
 .nav-container .nav-content .nav-search {
   display: flex;
   align-items: center;
