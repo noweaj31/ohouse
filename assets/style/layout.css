@@ -4,6 +4,12 @@
 
 header {
   font-family: "Noto Sans KR";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
 }
 .header-container .header-content {
   display: flex;
@@ -147,6 +153,13 @@ header {
 @media screen and (max-width: 767px) {
   .header-container .header-content .logo img {
     margin-right: 0;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
   }
 }
 /* nav */
@@ -559,7 +572,7 @@ main {
   padding: 0 6rem;
   max-width: 1256px;
 
-  margin: 3rem auto 0;
+  margin: 15.8rem auto 0;
 }
 .main-sec .main-img {
   flex: 1 1 84.7rem;
@@ -736,7 +749,7 @@ hr {
     display: none;
   }
   .main-sec {
-    margin-top: 2rem;
+    margin-top: 11rem;
     padding: 0 1.6rem;
     height: 100%;
   }
