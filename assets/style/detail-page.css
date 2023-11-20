@@ -414,10 +414,11 @@
   margin-right: auto;
   margin-left: auto;
   width: 100%;
-  max-width: 100%;
+
   box-sizing: border-box;
   min-height: 1px;
   padding: 0 6rem;
+  max-width: 1256px;
 }
 .selling-content .selling-wrap .category-wrap li a:hover {
   opacity: 0.6;

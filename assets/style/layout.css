@@ -1,7 +1,9 @@
 @charset 'UTF-8';
 
 /* header */
-
+.tns-nav {
+  display: none;
+}
 header {
   font-family: "Noto Sans KR";
   position: fixed;
@@ -222,20 +224,15 @@ header {
 .nav-container .nav-content .nav-search .ani-container {
   margin-right: 4rem;
   height: 5rem;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
   background-color: #fff;
 }
-.nav-container .nav-content .nav-search .ani-container .ani-area1 {
+.nav-container .nav-content .nav-search .ani-container .ani-area {
   display: flex;
   align-items: center;
   height: 5rem;
-  animation: search 10s infinite;
-}
-.nav-container .nav-content .nav-search .ani-container .ani-area2 {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  animation: search2 10s infinite;
 }
 
 .nav-container .nav-content .nav-search .ani-container .num-area {
@@ -279,48 +276,6 @@ header {
 }
 .nav-search .ani-btn {
   color: rgb(130, 140, 148);
-}
-
-@keyframes search {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  20% {
-    transform: translate3d(0, 0, 0);
-  }
-  40% {
-    transform: translate3d(0, -50px, 0);
-  }
-  40.5% {
-    transform: translate3d(0, 50px, 0);
-  }
-  60% {
-    transform: translate3d(0, 50px, 0);
-  }
-  80% {
-    transform: translate3d(0, 0px, 0);
-  }
-}
-
-@keyframes search2 {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  20% {
-    transform: translate3d(0, 0, 0);
-  }
-  40% {
-    transform: translate3d(0, -50px, 0);
-  }
-  60% {
-    transform: translate3d(0, -50px, 0);
-  }
-  80% {
-    transform: translate3d(0, -100px, 0);
-  }
-  80.5% {
-    transform: translate3d(0, 0px, 0);
-  }
 }
 
 .re-nav {
@@ -645,8 +600,11 @@ main {
 .main-sec .main-slick .slick-area .slick-box {
   display: flex;
   overflow: hidden;
-  border-radius: 4px;
+
   height: 100%;
+}
+.main-sec .main-slick .tns-ovh {
+  border-radius: 4px;
 }
 .main-sec .main-slick .slick-area .slick-box img {
   transition: transform 0.2s ease 0s;
@@ -1024,6 +982,7 @@ hr {
 .category .category-list {
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 .category .category-list .img-slick {
   display: flex;
