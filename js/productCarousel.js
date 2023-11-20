@@ -3,7 +3,7 @@
 const productCarousel = tns({
   container: ".product-carousel-slider .slider-list",
   controls: false,
-  navContainer: ".product-carousel-slider .thumbnail-list",
+  navContainer: ".product-carousel-thumbnail .thumbnail-list",
   navAsThumbnails: true,
   arrowKeys: true,
   autoplay: true,
