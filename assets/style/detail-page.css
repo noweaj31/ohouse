@@ -877,6 +877,7 @@
   line-height: 1.9rem;
   font-weight: bold;
   padding-bottom: 1px;
+  margin-top: 0.3rem;
 }
 .brand-btn .brand-home img {
   margin-left: 0.5rem;
@@ -896,6 +897,9 @@
   .selling-content .selling-wrap .selling-container {
     flex-direction: column;
     margin-top: 0;
+  }
+  .selling-content .selling-wrap .selling-container .product-info {
+    padding-left: 0;
   }
   .selling-content .product-info .product-info-wrap h1 p {
     display: block;
@@ -1028,10 +1032,53 @@ form button:nth-of-type(2) {
   border: 1px solid #35c5f0;
   color: #fff;
 }
+form button:nth-of-type(1):hover {
+  background-color: #f8fdff;
+}
+form button:nth-of-type(2):hover {
+  border-color: #09addb;
+  background-color: #09addb;
+}
 form .big-sale-img {
   width: 100%;
 }
 form .big-sale-img img {
   margin-top: 3rem;
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  form {
+    margin-top: 0;
+  }
+  form .select-group {
+    display: none;
+  }
+  form dl {
+    display: none;
+  }
+  form .btn-area {
+    display: none;
+  }
+  form .big-sale {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+  form .big-sale-img {
+    display: block;
+  }
+  form .big-sale-img::before {
+    content: "";
+    display: block;
+    height: 10px;
+    background-color: #ededed;
+  }
+  form .big-sale-img::after {
+    content: "";
+    display: block;
+    height: 10px;
+    background-color: #ededed;
+  }
+  form .big-sale-img img {
+    margin-top: 0;
+  }
 }
