@@ -953,3 +953,85 @@
     font-weight: 700;
   }
 }
+form {
+  margin-top: 2rem;
+}
+.select-group {
+  font-size: 1.5rem;
+
+  color: #424242;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.select-group.is_active .form-select {
+  border-color: #35c5f0;
+}
+.select-group.is_active i {
+  color: #35c5f0;
+}
+.select-group .form-select {
+  width: 100%;
+  height: 4rem;
+  padding: 0 3rem 0 1.5rem;
+  appearance: none;
+  border-radius: 0.4rem;
+}
+.select-group i {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(180deg);
+}
+form dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+form dl dt {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: rgb(47, 52, 56);
+  font-weight: 700;
+}
+form dl dd {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: rgb(47, 52, 56);
+  font-weight: 700;
+}
+form dl .price {
+  display: inline-flex;
+}
+form .btn-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+form button {
+  padding: 1.3rem 1rem 1.4rem;
+  font-size: 1.7rem;
+  line-height: 2.6rem;
+  background-color: #fff;
+  border: 1px solid #35c5f0;
+  color: #35c5f0;
+  width: 49%;
+  border-radius: 0.4rem;
+  font-weight: 700;
+}
+form button:nth-of-type(2) {
+  background-color: #35c5f0;
+  border: 1px solid #35c5f0;
+  color: #fff;
+}
+form .big-sale-img {
+  width: 100%;
+}
+form .big-sale-img img {
+  margin-top: 3rem;
+  width: 100%;
+}
