@@ -484,6 +484,13 @@ header {
   .nav-container .nav-content {
     padding: 0 4rem;
   }
+  .nav-container .nav-content .nav-search {
+    display: none;
+  }
+  .nav-container .nav-content {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 767px) {
   .nav-container {
