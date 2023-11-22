@@ -1310,6 +1310,8 @@ form .big-sale-img img {
 }
 .product-section {
   max-width: 69.2rem;
+  padding-top: 2rem;
+  margin-bottom: 8rem;
 }
 .product-table {
   margin-top: 4rem;
@@ -1336,7 +1338,12 @@ form .big-sale-img img {
   white-space: pre-line;
   word-break: break-all;
 }
-
+.section-divider {
+  display: none;
+  height: 1rem;
+  margin: 1.5rem -1.5rem 0;
+  background-color: #ededed;
+}
 @media screen and (max-width: 767px) {
   .product-section-container {
     width: calc(100% - 30px);
@@ -1347,5 +1354,11 @@ form .big-sale-img img {
   }
   .product-section-header {
     display: none;
+  }
+  .section-divider {
+    display: block;
+  }
+  .product-section {
+    margin-bottom: 2rem;
   }
 }
