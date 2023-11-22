@@ -1204,11 +1204,14 @@ form .big-sale-img img {
   align-items: center;
 }
 .product-selling-nav .nav-area .tab-list li button {
+  width: 100%;
   padding: 1.4rem 1rem 1.5rem;
   font-size: 1.5rem;
   background-color: #fafafa;
   line-height: 2rem;
   font-weight: 700;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
 }
 .product-selling-nav .nav-area .tab-list li button span {
   color: #9e9e9e;
@@ -1217,6 +1220,11 @@ form .big-sale-img img {
 .product-selling-nav .nav-area .tab-list li:hover button {
   color: #35c5f0;
 }
+.product-selling-nav .nav-area .tab-list li.is_active button {
+  color: #35c5f0;
+  border-bottom-color: #35c5f0;
+}
+
 @media screen and (max-width: 1023px) {
   .product-selling-nav .nav-area {
     padding: 0 4rem;
@@ -1224,12 +1232,18 @@ form .big-sale-img img {
   .product-selling-nav .nav-area .tab-list {
     width: 100%;
   }
+  .product-selling-nav .nav-area .tab-list li {
+    width: 100%;
+  }
   .product-selling-nav .nav-area .tab-list li button {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    border-bottom: 3px solid transparent;
   }
+
   .product-selling-nav .nav-area .tab-list li button span {
     position: absolute;
     left: 0;
@@ -1240,5 +1254,18 @@ form .big-sale-img img {
     font-size: 1.1rem;
     font-weight: 400;
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .product-selling-nav .nav-area {
+    padding: 0;
+  }
+  .product-selling-nav .nav-area .tab-list li button {
+    width: 100%;
+    background-color: #fff;
+  }
+  .product-selling-nav {
+    background-color: #fff;
   }
 }
