@@ -1345,4 +1345,7 @@ form .big-sale-img img {
   .product-section-content .btn-wrapper {
     display: block;
   }
+  .product-section-header {
+    display: none;
+  }
 }
