@@ -1546,3 +1546,108 @@ form .big-sale-img img {
     width: 8.7rem;
   }
 }
+
+/* review-content-filter */
+
+.review-content-filter {
+  width: 100%;
+}
+.review-content-filter .review-content-filter-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+.review-content-filter .review-content-filter-wrap .review-content-filter-list {
+  display: flex;
+  align-items: center;
+}
+.review-content-filter-list .photo {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #ededed;
+  padding-left: 1.2rem;
+}
+.review-content-filter-list .photo img {
+  width: 1.8rem;
+  height: 1.8rem;
+  filter: invert(50%) sepia(3%) saturate(10%) hue-rotate(314deg) brightness(90%)
+    contrast(83%);
+  margin-right: 0.5rem;
+}
+.review-content-filter-list button {
+  cursor: pointer;
+  margin: 0 0.6rem 0 0;
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  background: none;
+  border: none;
+  color: #757575;
+  transition: opacity 0.1s;
+}
+.review-content-filter-list button:hover {
+  opacity: 0.6;
+}
+.review-content-filter-list button.is_active {
+  color: #35c5f0;
+}
+.review-content-filter-option-list {
+  display: flex;
+  align-items: center;
+}
+.review-content-filter-option-list .review-content-filter-option-item {
+  margin: 0 0.2rem;
+}
+.review-content-filter-option-list .review-content-filter-option-item button {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  padding: 0.7rem 0.8rem 0.6rem;
+  border-radius: 0.4rem;
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+  color: #757575;
+  font-weight: 700;
+}
+.review-content-filter-option-list
+  .review-content-filter-option-item
+  button:hover {
+  background-color: #f0f0f0;
+  border-color: #f0f0f0;
+}
+.review-content-filter-option-list .review-content-filter-option-item button i {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  transform: rotate(180deg);
+}
+.filter-btn {
+  display: none;
+}
+.filter-btn button {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  padding: 0.7rem 1.6rem 0.6rem 0.8rem;
+  border-radius: 0.4rem;
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+  color: #757575;
+  font-weight: 700;
+}
+.filter-btn button img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 0.4rem;
+}
+@media screen and (max-width: 767px) {
+  .filter-btn {
+    display: block;
+  }
+  .review-content-filter-option-list .review-content-filter-option-item {
+    display: none;
+  }
+}
