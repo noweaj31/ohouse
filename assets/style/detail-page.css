@@ -1855,3 +1855,115 @@ form .big-sale-img img {
 #product-inquiry .product-section-header .text-btn:hover {
   opacity: 0.5;
 }
+
+#product-inquiry .inquiry-list .inquiry-item {
+  margin: 0 0 4rem;
+}
+#product-inquiry .inquiry-card-header .detail {
+  display: flex;
+
+  margin: 0 0 0.8rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #424242;
+}
+#product-inquiry .inquiry-card-header .detail dd::after {
+  content: "";
+  width: 0.1rem;
+  height: 1rem;
+  display: inline-block;
+  background-color: #424242;
+  margin: 0 0.4rem;
+}
+#product-inquiry .inquiry-card-header .detail dd:nth-of-type(3):after {
+  display: none;
+}
+#product-inquiry .inquiry-card-header .detail .answer-clear {
+  color: #35c5f0;
+}
+#product-inquiry .inquiry-card-header .misc {
+  margin: 0 0 0.9rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #bdbdbd;
+}
+#product-inquiry .inquiry-card-header .misc strong {
+  font-weight: 400;
+}
+#product-inquiry .inquiry-card-header .misc strong::after {
+  content: "";
+  display: inline-block;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #bdbdbd;
+  margin: 0 0.4rem 0 0.6rem;
+}
+
+#product-inquiry .inquiry-card-body {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+#product-inquiry .inquiry-card-body .question-content {
+  display: flex;
+  margin-bottom: 1rem;
+}
+#product-inquiry .inquiry-card-body .question-content .question-ic {
+  color: #35c5f0;
+  font-weight: 700;
+}
+#product-inquiry .inquiry-card-body .question-content p {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.2rem;
+  color: #424242;
+}
+#product-inquiry .inquiry-card-body .question-content p img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.6rem;
+}
+#product-inquiry .inquiry-card-body .question-content .secret-text {
+  flex-direction: row;
+  align-items: center;
+}
+#product-inquiry .inquiry-card-body .question-content .product-name {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  color: #bdbdbd;
+}
+#product-inquiry .inquiry-card-body .answer-content {
+  display: flex;
+}
+#product-inquiry .inquiry-card-body .answer-content .question-ic {
+  color: #35c5f0;
+  font-weight: 700;
+}
+#product-inquiry .inquiry-card-body .answer-content .answer-content-body-area {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.2rem;
+}
+#product-inquiry
+  .inquiry-card-body
+  .answer-content
+  .answer-content-body-area
+  time {
+  margin: 0 0 0.9rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #bdbdbd;
+}
+#product-inquiry .inquiry-card-body .answer-content .answer-content-body {
+  margin-bottom: 0.4rem;
+}
+@media screen and (max-width: 767px) {
+  #product-inquiry {
+    height: auto;
+  }
+  #product-inquiry .inquiry-list {
+    margin-top: 4rem;
+  }
+  #product-inquiry .inquiry-card-body {
+    font-size: 1.2rem;
+  }
+}
