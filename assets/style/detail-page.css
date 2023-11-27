@@ -1855,7 +1855,9 @@ form .big-sale-img img {
 #product-inquiry .product-section-header .text-btn:hover {
   opacity: 0.5;
 }
-
+#product-inquiry .icon-btn {
+  display: none;
+}
 #product-inquiry .inquiry-list .inquiry-item {
   margin: 0 0 4rem;
 }
@@ -1959,11 +1961,24 @@ form .big-sale-img img {
 @media screen and (max-width: 767px) {
   #product-inquiry {
     height: auto;
+    margin-bottom: 0;
   }
   #product-inquiry .inquiry-list {
     margin-top: 4rem;
   }
   #product-inquiry .inquiry-card-body {
     font-size: 1.2rem;
+  }
+  #product-inquiry .product-section-header .text-btn {
+    display: none;
+  }
+  #product-inquiry .icon-btn {
+    display: block;
+  }
+  #product-inquiry .product-section-content {
+    display: none;
+  }
+  .product-section-container .section-divider:nth-of-type(3) {
+    margin-top: 0;
   }
 }
