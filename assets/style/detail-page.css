@@ -2029,3 +2029,14 @@ form .big-sale-img img {
     color: #000;
   }
 }
+
+#product-recommendation .product-section-header .badge {
+  color: #35c5f0;
+  margin-left: 0.4rem;
+}
+
+@media screen and (max-width: 767px) {
+  #product-recommendation .product-section-header {
+    display: block;
+  }
+}
