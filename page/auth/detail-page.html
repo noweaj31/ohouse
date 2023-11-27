@@ -1629,16 +1629,65 @@
           </div>
         </section>
         <div class="section-divider"></div>
-        <section
-          class="product-section is_open"
-          id="product-spec"
-          role="tabpanel"
-        >
-          <div class="product-section-header">
-            <h1 class="title">배송</h1>
+        <div id="product-shipment" role="tabpanel">
+          <div class="product-shipment-section-header">
+            <h1 class="title">배송/교환/환불</h1>
+            <button class="icon-btn" type="button" aria-label="더보기">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
           </div>
-        </section>
-        <div class="section-divider"></div>
+          <section class="product-section delivery">
+            <div class="product-section-header">
+              <h1 class="title">배송</h1>
+            </div>
+            <div class="product-section-content">
+              <table class="product-table">
+                <tbody>
+                  <tr>
+                    <th scope="row">배송</th>
+                    <td>일반택배</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">배송비</th>
+                    <td>3,000원 (80,000원 이상 구매시 무료배송)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">도서산간 추가 배송비</th>
+                    <td>4,000원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">배송불가 지역</th>
+                    <td>배송불가 지역이 없습니다.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <div class="section-divider"></div>
+          <section class="product-section exchange">
+            <div class="product-section-header">
+              <h1 class="title">교환/환불</h1>
+            </div>
+            <div class="product-section-content">
+              <table class="product-table">
+                <tbody>
+                  <tr>
+                    <th scope="row">반품배송비</th>
+                    <td>3,000원 (최초 배송비가 무료인 경우 6,000원 부과)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">교환배송비</th>
+                    <td>6,000원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">보내실 곳</th>
+                    <td>(14522) 경기 부천시 도당동 164-14 미금테크 3층</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
 
@@ -1757,5 +1806,6 @@
     <script src="../../js/productCarousel.js"></script>
     <script src="../../js/carousel.js"></script>
     <script src="../../js/inquiry.js"></script>
+    <script src="../../js/shipment.js"></script>
   </body>
 </html>

@@ -1982,3 +1982,50 @@ form .big-sale-img img {
     margin-top: 0;
   }
 }
+@media screen and (max-width: 349px) {
+  .pagination .page-item:nth-of-type(6),
+  .pagination .page-item:nth-of-type(7),
+  .pagination .page-item:nth-of-type(8),
+  .pagination .page-item:nth-of-type(9) {
+    display: none;
+  }
+}
+
+/* product-shipment */
+
+#product-shipment .product-table {
+  margin-top: 0;
+}
+#product-shipment .product-table td {
+  color: #424242;
+  white-space: pre-line;
+  word-break: break-all;
+}
+.product-shipment-section-header {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  #product-shipment .product-section-header {
+    display: block;
+  }
+  #product-shipment .product-section {
+    padding-top: 0;
+    height: auto;
+    display: none;
+  }
+  #product-shipment .product-table {
+    font-size: 1.2rem;
+  }
+  .product-shipment-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+  .product-shipment-section-header h1 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: #000;
+  }
+}
