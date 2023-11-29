@@ -2041,15 +2041,45 @@ form .big-sale-img img {
   width: calc(33.333% - 1.1rem);
   margin-bottom: 2rem;
 }
+#product-recommendation .product-section-content .product-list .product-item a {
+  display: block;
+}
+#product-recommendation
+  .product-section-content
+  .product-list
+  .product-item
+  a:hover
+  .product-card-img
+  img {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+#product-recommendation
+  .product-section-content
+  .product-list
+  .product-item
+  a:hover
+  .product-card-title {
+  opacity: 0.5;
+}
 #product-recommendation .product-section-content .product-card-img {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
   border-radius: 0.4rem;
   overflow: hidden;
   margin-bottom: 0.8rem;
 }
 #product-recommendation .product-section-content .product-card-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 200ms ease-in-out;
 }
 #product-recommendation .product-section-content .product-card-brand {
   display: block;
