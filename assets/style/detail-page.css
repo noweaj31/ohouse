@@ -1289,7 +1289,8 @@ form .big-sale-img img {
   color: #757575;
 }
 .user-gallery .user-gallery-slider {
-  margin-bottom: 0.6rem;
+  margin-bottom: 2rem;
+  position: relative;
 }
 .user-gallery .slider-list {
   display: flex;
@@ -1319,39 +1320,78 @@ form .big-sale-img img {
 }
 .user-gallery-thumnail .thumnail-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 0.6rem;
 }
 .user-gallery-thumnail .thumnail-item.tns-nav-active button {
-  border: 3px solid #35c5f0;
+  background-color: rgb(47, 52, 56);
+  width: 0.8rem;
+  height: 0.8rem;
 }
 .user-gallery-thumnail .thumnail-item button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 0.6rem;
+  height: 0.6rem;
   border-radius: 0.4rem;
   overflow: hidden;
+  background-color: rgb(194, 200, 204);
 }
 .user-gallery-thumnail .thumnail-item button img {
+  display: none;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.user-gallery-controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 5.2rem;
+}
+.user-gallery-controls .control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+  transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+}
+.user-gallery-controls .control-btn[disabled] {
+  opacity: 0;
+  visibility: hidden;
+}
+.user-gallery-controls .control-btn:hover {
+  background-color: #35c5f0;
+}
+.user-gallery-controls .control-btn:hover i {
+  color: #fff;
 }
 @media screen and (max-width: 767px) {
   .product-section.product-user-gallery {
     height: auto;
   }
-  .user-gallery-thumnail .thumnail-item button {
-    width: 6.4rem;
-    height: 6.4rem;
-  }
+
   .user-gallery-thumnail .thumnail-list {
     padding-left: 0.2rem;
     gap: 0.4rem;
   }
   .user-gallery .user-gallery-slider {
     margin-bottom: 0.4rem;
+  }
+  .user-gallery-controls {
+    display: none;
   }
 }
 /* product-section */
