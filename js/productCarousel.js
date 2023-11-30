@@ -20,12 +20,34 @@ const productCarousel = tns({
 });
 
 // usergallery
-
-const userGallery = tns({
-  container: ".user-gallery-slider .slider-list",
-  navContainer: ".user-gallery .thumnail-list",
+const userGalleryMobile = tns({
+  container: ".user-gallery-slider.is-mobile .slider-list",
+  navContainer: ".user-gallery.is-mobile  .thumnail-list",
   navAsThumbnails: true,
-  controlsContainer: ".user-gallery-controls",
+  controlsContainer: ".user-gallery-slider.is-mobile .user-gallery-controls",
+  controls: true,
+  gutter: 4,
+  edgePadding: 16,
+  loop: false,
+  controls: false,
+  arrowKeys: true,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+  items: 1,
+  responsive: {
+    768: {
+      gutter: 6,
+      edgePadding: 75,
+      controls: true,
+    },
+  },
+});
+
+const userGalleryDesktop = tns({
+  container: ".user-gallery-slider.is-desktop .slider-list",
+  navContainer: ".user-gallery.is-desktop .thumnail-list",
+  navAsThumbnails: true,
+  controlsContainer: ".user-gallery-slider.is-desktop .user-gallery-controls",
   controls: true,
   gutter: 4,
   edgePadding: 16,
