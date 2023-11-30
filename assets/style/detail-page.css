@@ -1274,7 +1274,29 @@ form .big-sale-img img {
     background-color: #fff;
   }
 }
-
+/* product-user-gallery */
+.product-user-gallery .product-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-user-gallery .product-section-header .badge {
+  color: #35c5f0;
+  margin-left: 4px;
+}
+.product-user-gallery .product-section-header .text-btn {
+  font-size: 1.6rem;
+  color: #757575;
+}
+.gallery-card .gallery-card-img {
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+.gallery-card .gallery-card-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /* product-section */
 .product-section-container {
   max-width: 1256px;
