@@ -11,6 +11,12 @@ const productCarousel = tns({
   autoplayButtonOutput: false,
   mouseDrag: true,
   preventScrollOnTouch: true,
+  mode: "gallery",
+  responsive: {
+    768: {
+      mode: "gallery",
+    },
+  },
 });
 
 // usergallery
