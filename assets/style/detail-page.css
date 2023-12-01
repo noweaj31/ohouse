@@ -2389,11 +2389,11 @@ form .big-sale-img img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
-    z-index: 500;
+    z-index: 30;
     margin: 0 auto;
     padding: 0.6rem;
     background-color: #fff;
@@ -2415,6 +2415,12 @@ form .big-sale-img img {
   .order-cta .bookmark-btn {
     color: #424242;
     font-size: 2.4rem;
+  }
+  .order-cta .bookmark-btn.is-click {
+    display: none;
+  }
+  .order-cta .bookmark-btn.is-click i {
+    color: #35c5f0;
   }
   .order-cta .bookmark-btn span {
     display: block;

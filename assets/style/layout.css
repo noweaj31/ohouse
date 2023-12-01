@@ -2556,6 +2556,9 @@ footer {
   .header-container .header-content {
     padding: 2rem 4rem;
   }
+  footer {
+    margin-top: 0;
+  }
   .footer-content {
     flex-wrap: wrap;
     padding: 4rem;
@@ -2632,6 +2635,9 @@ footer {
   }
   .header-container .header-content .logo {
     margin-right: 0px;
+  }
+  footer {
+    margin-top: 0;
   }
   .footer-content {
     padding: 3rem 1.6rem;
