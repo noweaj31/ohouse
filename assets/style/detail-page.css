@@ -2485,7 +2485,7 @@ form .big-sale-img img {
 }
 @media screen and (max-width: 1023px) {
   .overlay {
-    display: block;
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -2518,6 +2518,9 @@ form .big-sale-img img {
     animation-name: modal-fade-in;
     animation-duration: 300ms;
     overscroll-behavior: contain;
+  }
+  .overlay.is-open {
+    display: block;
   }
   @keyframes modal-fade-in {
     0% {
@@ -2746,7 +2749,7 @@ form .big-sale-img img {
 
 /* cart-modal */
 .cart-modal-bgc {
-  display: block;
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -2755,6 +2758,9 @@ form .big-sale-img img {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
   overscroll-behavior: contain;
+}
+.cart-modal-bgc.is-active {
+  display: block;
 }
 .cart-modal {
   font-family: "Noto Sans KR";
