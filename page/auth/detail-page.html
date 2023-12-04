@@ -341,26 +341,6 @@
       </div>
     </div>
 
-    <aside class="search-box">
-      <div class="search-box-wrap">
-        <h1>검색창</h1>
-        <div class="header-area2">
-          <div class="input-area">
-            <button class="search-btn">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <input type="text" placeholder="쇼핑 검색" />
-          </div>
-          <button class="close-btn">취소</button>
-        </div>
-        <section>
-          <header class="search-box-header">
-            <h2>최근 검색어</h2>
-            <button type="button">전체 삭제</button>
-          </header>
-        </section>
-      </div>
-    </aside>
     <main class="selling-content">
       <div class="selling-wrap">
         <nav class="category-wrap">
@@ -3133,7 +3113,26 @@
       </ul>
     </aside>
     <div class="shadow"></div>
-
+    <aside class="search-box">
+      <div class="search-box-wrap">
+        <h1>검색창</h1>
+        <div class="header-area2">
+          <div class="input-area">
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="text" placeholder="쇼핑 검색" />
+          </div>
+          <button class="close-btn">취소</button>
+        </div>
+        <section>
+          <header class="search-box-header">
+            <h2>최근 검색어</h2>
+            <button type="button">전체 삭제</button>
+          </header>
+        </section>
+      </div>
+    </aside>
     <aside class="order-cta">
       <button class="bookmark-btn unclick">
         <i class="fa-regular fa-bookmark"></i>
@@ -3148,103 +3147,102 @@
     <button class="gototop-btn">
       <i class="fa-solid fa-arrow-up"></i>
     </button>
-    <div class="overlay">
-      <div class="order-form-modal">
-        <form action="/" method="POST">
-          <div class="select-group is_active">
-            <select class="form-select" id="order-form-modal-select-1" required>
-              <option value="">컬러</option>
-              <option value="0">화이트(20,900 ~ 27,400원)</option>
-              <option value="1">
-                화이트(빠른출고/기성커튼)(16,800 ~ 83,200원)
-              </option>
-              <option value="2">퍼플(20,900 ~ 27,400원)</option>
-              <option value="3">연피치(20,900 ~ 27,400원)</option>
-            </select>
-            <i class="fa-solid fa-caret-up"></i>
-          </div>
-          <div class="select-group">
-            <select class="form-select" id="order-form-modal-select-2">
-              <option value="">스타일 / 세로길이</option>
-              <option value="0">나비주름형 / ~160 (20,900원)</option>
-              <option value="1">나비주름형 / 161~250 (25,400원)</option>
-              <option value="2">나비주름형 / 251~260 (27,400원)</option>
-              <option value="3">핀형(민자) / ~160 (20,900원)</option>
-              <option value="4">핀형(민자) / 161~250 (25,400원)</option>
-              <option value="5">핀형(민자) / 251~260 (27,400원)</option>
-              <option value="6">봉집형 / ~160 (20,900원)</option>
-            </select>
-            <i class="fa-solid fa-caret-up"></i>
-          </div>
+    <aside class="order-form-modal">
+      <form action="/" method="POST">
+        <div class="select-group is_active">
+          <select class="form-select" id="order-form-modal-select-1" required>
+            <option value="">컬러</option>
+            <option value="0">화이트(20,900 ~ 27,400원)</option>
+            <option value="1">
+              화이트(빠른출고/기성커튼)(16,800 ~ 83,200원)
+            </option>
+            <option value="2">퍼플(20,900 ~ 27,400원)</option>
+            <option value="3">연피치(20,900 ~ 27,400원)</option>
+          </select>
+          <i class="fa-solid fa-caret-up"></i>
+        </div>
+        <div class="select-group">
+          <select class="form-select" id="order-form-modal-select-2">
+            <option value="">스타일 / 세로길이</option>
+            <option value="0">나비주름형 / ~160 (20,900원)</option>
+            <option value="1">나비주름형 / 161~250 (25,400원)</option>
+            <option value="2">나비주름형 / 251~260 (27,400원)</option>
+            <option value="3">핀형(민자) / ~160 (20,900원)</option>
+            <option value="4">핀형(민자) / 161~250 (25,400원)</option>
+            <option value="5">핀형(민자) / 251~260 (27,400원)</option>
+            <option value="6">봉집형 / ~160 (20,900원)</option>
+          </select>
+          <i class="fa-solid fa-caret-up"></i>
+        </div>
 
-          <ul class="checkout-list">
-            <li class="checkout-item">
-              <div class="checkout-card">
-                <h4 class="checkout-title">
-                  컬러: 화이트 / 스타일 / 세로길이: 나비주름형 / ~160
-                </h4>
-                <button
-                  class="delete-btn"
-                  type="button"
-                  aria-label="해당 상품 삭제버튼"
+        <ul class="checkout-list">
+          <li class="checkout-item">
+            <div class="checkout-card">
+              <h4 class="checkout-title">
+                컬러: 화이트 / 스타일 / 세로길이: 나비주름형 / ~160
+              </h4>
+              <button
+                class="delete-btn"
+                type="button"
+                aria-label="해당 상품 삭제버튼"
+              >
+                <span>&times</span>
+              </button>
+              <div class="checkout-select-area">
+                <div class="checkout-select">
+                  <select id="order-form-modal-checkout-item-1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                  <i class="fa-solid fa-caret-up"></i>
+                </div>
+                <output
+                  class="checkout-output"
+                  for="order-form-modal-checkout-item-1"
                 >
-                  <span>&times</span>
-                </button>
-                <div class="checkout-select-area">
-                  <div class="checkout-select">
-                    <select id="order-form-modal-checkout-item-1">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                    </select>
-                    <i class="fa-solid fa-caret-up"></i>
+                  <div class="price">
+                    <strong class="amount">20,900</strong>
+                    <span class="currency">원</span>
                   </div>
-                  <output
-                    class="checkout-output"
-                    for="order-form-modal-checkout-item-1"
-                  >
-                    <div class="price">
-                      <strong class="amount">20,900</strong>
-                      <span class="currency">원</span>
-                    </div>
-                  </output>
-                </div>
-                <label for="">
-                  <p>실측 가로x세로길이 / 희망세로길이 를 적어주세요! (필수)</p>
-                  <div class="checkout-text">
-                    <textarea
-                      placeholder="주문에 필요한 내용을 적어주세요"
-                    ></textarea>
-                  </div>
-                </label>
+                </output>
               </div>
-            </li>
-          </ul>
-
-          <dl>
-            <dt>주문금액</dt>
-            <dd>
-              <output for="select-1 select-2 select-3">
-                <div class="price">
-                  <strong class="amount">0</strong>
-                  <span class="currency">원</span>
+              <label for="">
+                <p>실측 가로x세로길이 / 희망세로길이 를 적어주세요! (필수)</p>
+                <div class="checkout-text">
+                  <textarea
+                    placeholder="주문에 필요한 내용을 적어주세요"
+                  ></textarea>
                 </div>
-              </output>
-            </dd>
-          </dl>
-          <div class="btn-area">
-            <button class="shopping-basket" type="button">장바구니</button>
-            <button class="purchase" type="submit">바로구매</button>
-          </div>
-          <div class="big-sale">
-            <a class="big-sale-img" href=""
-              ><img src="../../assets/image/detail-page-sale-img.avif" alt=""
-            /></a>
-          </div>
-        </form>
-      </div>
-    </div>
+              </label>
+            </div>
+          </li>
+        </ul>
+
+        <dl>
+          <dt>주문금액</dt>
+          <dd>
+            <output for="select-1 select-2 select-3">
+              <div class="price">
+                <strong class="amount">0</strong>
+                <span class="currency">원</span>
+              </div>
+            </output>
+          </dd>
+        </dl>
+        <div class="btn-area">
+          <button class="shopping-basket" type="button">장바구니</button>
+          <button class="purchase" type="submit">바로구매</button>
+        </div>
+        <div class="big-sale">
+          <a class="big-sale-img" href=""
+            ><img src="../../assets/image/detail-page-sale-img.avif" alt=""
+          /></a>
+        </div>
+      </form>
+    </aside>
+    <div class="overlay"></div>
     <aside class="cart-modal-bgc">
       <div class="cart-modal">
         <h1 class="cart-title">장바구니에 상품을 담았습니다</h1>
@@ -3385,5 +3383,6 @@
     <script src="../../js/shipment.js"></script>
     <script src="../../js/bookmark.js"></script>
     <script src="../../js/sidebar.js"></script>
+    <script src="../../js/order-cta.js"></script>
   </body>
 </html>
