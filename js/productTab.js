@@ -7,14 +7,20 @@ const TOP_HEADER_DESKTOP = 80 + 48 + 52;
 const TOP_HEADER_MOBILE = 50 + 40 + 52;
 
 let currentActiveTab = productTab.querySelector(".is_active");
+let disableUpdating = false;
 
 function toggleActiveTab() {
   const tabItem = this.parentNode;
 
   if (currentActiveTab !== tabItem) {
+    disableUpdating = true;
     tabItem.classList.add("is_active");
     currentActiveTab.classList.remove("is_active");
     currentActiveTab = tabItem;
+
+    setTimeout(() => {
+      disableUpdating = false;
+    }, 1000);
   }
 }
 
@@ -61,9 +67,14 @@ function detectTabPanelPosition() {
     const position = window.scrollY + panel.getBoundingClientRect().top;
     productTabPanelPositionMap[id] = position;
   });
+  updateActiveTabOnScroll();
 }
 
 function updateActiveTabOnScroll() {
+  if (disableUpdating) {
+    return;
+  }
+
   const scrolledAmount =
     window.scrollY +
     (window.innerWidth >= 768 ? TOP_HEADER_DESKTOP : TOP_HEADER_MOBILE);
@@ -87,7 +98,9 @@ function updateActiveTabOnScroll() {
 
     if (newActiveTab !== currentActiveTab) {
       newActiveTab.classList.add("is_active");
-      currentActiveTab.classList.remove("is_active");
+      if (currentActiveTab !== null) {
+        currentActiveTab.classList.remove("is_active");
+      }
       currentActiveTab = newActiveTab;
     }
   }
