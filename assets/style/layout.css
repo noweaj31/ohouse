@@ -564,6 +564,7 @@ main {
 .main-sec .main-img .img-area .img-box img:hover {
   transform: scale(1.05);
 }
+
 .main-sec .main-img .img-area .title-box {
   position: absolute;
   left: 0;

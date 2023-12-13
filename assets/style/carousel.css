@@ -21,9 +21,7 @@
 .product-carousel-thumbnail img {
   display: block;
 }
-.product-carousel-thumbnail {
-  /* display: inline-flex; */
-}
+
 .product-carousel-thumbnail .thumbnail-list {
   display: flex;
   flex-direction: column;
