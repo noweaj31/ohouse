@@ -1,74 +1,5 @@
 "use strict";
 
-// main calroucel
-// const slideBox = document.querySelector(".slick-box");
-// const slideImg = document.querySelector(".slick-box img");
-// const currentInx = 0;
-// const totalImg = document.querySelectorAll(".slick-box img").length;
-// const carouselWidth = slideImg.clientWidth;
-// const prevButton = document.querySelector(".slick-wrap .prev");
-// const nextButton = document.querySelector(".slick-wrap .next");
-// let autocarouselInterval;
-
-// // 버튼 작동 함수
-// const initializeCarousel = () => {
-//   prevButton.disabled = false;
-//   nextButton.disabled = false;
-// };
-
-// //
-// const rotateCarousel = (direction) => {
-//   currentInx += direction;
-//   const scrollX = currentInx * carouselWidth;
-
-//   carouselWrap.scrollTo({
-//     left: scrollX,
-//     behavior: "smooth",
-//   });
-// };
-
-// // 자동 카로셀 1씩 넘겨지는 함수
-// const startAutoCarousel = () => {
-//   autocarouselInterval = setInterval(() => {
-//     rotateCarousel(1);
-//   }, 3000);
-// };
-
-// nextButton.addEventListener("click", () => {
-//   rotateCarousel(1);
-// });
-
-// prevButton.addEventListener("click", () => {
-//   rotateCarousel(-1);
-// });
-
-// initializeCarousel();
-// startAutoCarousel();
-
-// 빈응형 main calroucel
-
-// $(document).ready(function () {
-//   // main calroucel
-//   $(".slick-wrap .slick-box").slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     draggable: false,
-//     prevArrow: $(".main-slick .prev"),
-//     nextArrow: $(".main-slick .next"),
-//   });
-
-//   // 빈응형 main calroucel
-//   $(".slick-img-").slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 3000,
-//     infinite: true,
-//     arrows: false,
-//   });
-// });
 const aniArea = tns({
   container: ".ani-container",
   autoplay: true,
@@ -108,15 +39,115 @@ const slider = tns({
 });
 
 const categorySlick = tns({
-  container: ".category-list .img-slick",
-  items: 17,
-  slideBy: 2,
-  autoplay: false,
+  container: ".category .img-slick",
+  items: 14,
+  slideBy: 1,
+  loop: false,
   controls: true,
-  navAsThumbnails: true,
+  arrowKeys: true,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
   arrowKeys: true,
   autoplayHoverPause: true,
   autoplayButtonOutput: false,
   mouseDrag: true,
   preventScrollOnTouch: true,
+  controlsContainer: ".category .arrow-slider",
+  responsive: {
+    768: {
+      items: 14,
+      slideBy: 3,
+    },
+  },
+});
+const todayDealSlider = tns({
+  container: ".today-deal .item-container",
+  loop: false,
+  controls: true,
+  arrowKeys: true,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+  arrowKeys: true,
+  autoplayHoverPause: true,
+  autoplayButtonOutput: false,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+  controlsContainer: ".today-deal .arrow-slider",
+  responsive: {
+    768: {
+      items: 4,
+      slideBy: 4,
+      gutter: 20,
+    },
+  },
+});
+
+const interiorSlider = tns({
+  container: ".interior-pic .interior-img",
+  items: 2,
+  gutter: 12,
+  loop: false,
+  controls: true,
+  arrowKeys: true,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+  arrowKeys: true,
+  autoplayHoverPause: true,
+  autoplayButtonOutput: false,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+  controlsContainer: ".interior-pic .arrow-slider",
+  responsive: {
+    768: {
+      gutter: 16,
+      items: 4,
+      slideBy: 4,
+    },
+    1024: {
+      gutter: 20,
+      items: 6,
+      slideBy: 6,
+    },
+  },
+});
+
+const exhibitionSlider = tns({
+  container: ".exhibition-content .exh-area",
+  loop: false,
+  controls: true,
+  arrowKeys: true,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+  arrowKeys: true,
+  autoplayHoverPause: true,
+  autoplayButtonOutput: false,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+  controlsContainer: ".exhibition-content .arrow-slider",
+  responsive: {
+    768: {
+      items: 4,
+      slideBy: 4,
+      gutter: 20,
+    },
+  },
+});
+
+const bestContentSlider = tns({
+  container: ".best-content .cate-list",
+  items: 13,
+  slideBy: 6,
+  gutter: 6,
+  autoWidth: true,
+  loop: false,
+  controls: true,
+  arrowKeys: true,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+  arrowKeys: true,
+  autoplayHoverPause: true,
+  autoplayButtonOutput: false,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+  controlsContainer: ".best-content .arrow-slider",
 });
