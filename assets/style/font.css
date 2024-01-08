@@ -1,4 +1,8 @@
-@import "../font/noto-sans-kr/notosans.css";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
 @import "../font/roboto/roboto.css";
 @import "../font/jal-oneul/jal-oneul.css";
 @import "../font/jal-haru/jal-haru.css";
