@@ -805,6 +805,15 @@ hr {
     display: none;
   }
 }
+@media screen and (max-width: 423px) {
+  .icon-container .icon-area {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .icon-container .icon-area .icon img {
+    max-width: 5.8rem;
+  }
+}
+
 /* space-img */
 .space-li1 {
   max-width: 1256px;
