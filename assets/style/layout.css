@@ -2133,9 +2133,9 @@ hr {
   white-space: nowrap;
   cursor: inherit;
 }
-input[type="checkbox"] {
+/* input[type="checkbox"] {
   display: none;
-}
+} */
 .best-content
   .best-container
   .category-area

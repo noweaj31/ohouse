@@ -65,52 +65,64 @@
             <div class="pw-area-input">
               <label>비밀번호</label>
               <p>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</p>
-              <input type="text" placeholder="비밀번호" />
+              <input
+                type="password"
+                placeholder="비밀번호"
+                style="background-color: #fafafa; color: black"
+              />
             </div>
             <div class="password-confirm-area">
               <label>비밀번호 확인</label>
-              <input type="text" placeholder="비밀번호 확인" />
+              <input
+                type="password"
+                placeholder="비밀번호 확인"
+                style="color: black"
+              />
             </div>
             <div class="pw-area-input">
               <label>닉네임</label>
               <p>다른 유저와 겹치지 않도록 입력해주세요. (2~15자)</p>
-              <input type="text" placeholder="별명 (2~15자)" />
+              <input
+                type="text"
+                placeholder="별명 (2~15자)"
+                style="color: black"
+              />
             </div>
           </div>
           <div class="agreement-area">
             <p class="agreement-area-title">약관동의</p>
             <div class="check_input-area">
               <label>
-                <input class="check_input" type="checkbox" />
+                <input class="check_input" id="agreement-btn" type="checkbox" />
                 <p class="the-entire">전체동의</p>
                 <p>선택항목에 대한 동의 포함</p>
               </label>
               <label>
-                <input class="check_input" type="checkbox" />
+                <input class="check_input" id="a-btn" type="checkbox" />
                 <p class="check_input-title">만 14세 이상입니다</p>
                 <span>(필수)</span>
               </label>
 
               <label>
-                <input class="check_input" type="checkbox" />
+                <input class="check_input" id="b-btn" type="checkbox" />
                 <p class="check_input-title">이용약관</p>
                 <span>(필수)</span>
                 <a href=""><i class="fa-solid fa-chevron-right"></i></a>
               </label>
               <label>
-                <input class="check_input" type="checkbox" />
+                <input class="check_input" id="c-btn" type="checkbox" />
                 <p class="check_input-title">개인정보수집 및 이용동의</p>
                 <span>(필수)</span>
                 <a href=""><i class="fa-solid fa-chevron-right"></i></a>
               </label>
               <label>
-                <input class="check_input" type="checkbox" />
+                <input class="check_input" id="d-btn" type="checkbox" />
                 <p class="check_input-title">개인정보 마케팅 활용 동의</p>
                 <span>(선택)</span>
                 <a href=""><i class="fa-solid fa-chevron-right"></i></a>
               </label>
               <label>
-                <input class="check_input" type="checkbox" />
+                <input class="check_input" id="e-btn" type="checkbox" />
                 <p class="check_input-title">
                   개이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신
                 </p>
@@ -123,5 +135,6 @@
         </div>
       </div>
     </div>
+    <script src="../../js/input.js"></script>
   </body>
 </html>

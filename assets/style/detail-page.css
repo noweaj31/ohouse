@@ -1230,7 +1230,9 @@ form .big-sale-img img {
   height: 0;
   color: rgb(47, 52, 56);
 }
-
+textarea:focus {
+  outline: none;
+}
 /* product-section */
 
 .product-selling-nav {
